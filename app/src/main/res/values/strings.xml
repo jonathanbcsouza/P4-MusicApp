@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Udacity Music</string>
+
+    <!-- Activity Information -->
+    <string name="text_home_activity">
+        Home,HomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHome
+        HomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomev.
+        HomeHomevvvvvvvvvFImHomeHomeHomeHomeHomeHomeHomeHomeHome
+    </string>
+
+    <string name="text_artist_header">
+        Artist Screen - this displays a list of songs based on the mood chosen in MainActivity
+        screen. This uses ListView and ArrayAdapter to display the list. When clicked on any list
+        item, MediaActivity (next screen) is launched to listen to the song.
+    </string>
+
+    <string name="text_album_header">
+    ALBUNS - albsfuns albfuns albudgfns aglbuns alhbuns galdbuns albbns albuns balbuns albubns
+        </string>
+
+    <string name="text_songs_header">
+        Songs Screen - sonsg ssadasong sdaong song fassong sonfasfg sosng song gsongfasd soneg song
+        sonsad song sadsong song asdsong song songdsa sonsg song soang song asdsong song 3sonvg sovng
+    </string>
+    <string name="text_mediaplayer_header">
+        Media Player - dfplady plasfd plasd plfay f pfdgshlay plajy play playk pdsfaky plah plfhay pdhlay
+         pldsaydsplay play dplay play plfay play pldfay pffdhlay fplay plasdy plfay play asdpldfadf
+    </string>
+
+    <!-- Navigation Bar [CHAR LIMIT=??] -->
+    <string name="category_artists">Artists</string>
+    <string name="category_library">Library</string>
+    <string name="category_search">Search Songs</string>
+    <string name="category_home">Home</string>
+    <string name="category_albuns">Albuns</string>
+    <string name="category_all_songs">All Songs</string>
+
+    <!-- ?????????????????] -->
+
+    <string name="title_activity_artist">ArtistActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Artists Names [CHAR LIMIT=??] -->
+    <string name="artist1">John Hindemith</string>
+    <string name="artist2">RadioHead</string>
+    <string name="artist3">Olafur Arnalds</string>
+    <string name="artist4">Audio Slave</string>
+    <string name="artist5">Nirvana</string>
+    <string name="artist6">Nirvana</string>
+    <string name="artist7">Nirvana</string>
+    <string name="artist8">Nirvana</string>
+    <string name="artist9">Nirvana</string>
+    <string name="artist10">Nirvana</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

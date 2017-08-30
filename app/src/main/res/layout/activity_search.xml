@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+
+    android:orientation="vertical"
+    tools:context="com.udacitymusicexample.udacitymusic.MainActivity">
+
+
+    <LinearLayout
+        style="@style/NavigationStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <EditText
+            android:id="@+id/menu_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:hint="Search here"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:layout_weight="0.27" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationBarlibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/homeXmlFromSearch"
+            style="@style/NavigationStyle"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:text="@string/category_home" />
+
+        <TextView
+            style="@style/NavigationStyle"
+            android:drawableTop="@drawable/ic_search_black_24dp"
+            android:text="@string/category_search" />
+
+        <TextView
+            android:id="@+id/libraryXmlFromSearch"
+            style="@style/NavigationStyle"
+            android:drawableTop="@drawable/ic_library_music_black_24dp"
+            android:text="@string/category_library" />
+
+    </LinearLayout>
+</LinearLayout>

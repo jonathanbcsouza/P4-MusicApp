@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context="com.udacitymusicexample.udacitymusic.HomeActivity">
+
+
+    <LinearLayout
+        android:id="@+id/navigationBar1"
+        style="@style/NavigationStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/NavigationStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:text="@string/category_home" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationBarlibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/homeXml"
+            style="@style/NavigationStyle"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:text="@string/category_home" />
+
+        <TextView
+            android:id="@+id/searchXml"
+            style="@style/NavigationStyle"
+            android:drawableTop="@drawable/ic_search_black_24dp"
+            android:text="@string/category_search" />
+
+        <TextView
+            android:id="@+id/libraryXml"
+            style="@style/NavigationStyle"
+            android:drawableTop="@drawable/ic_library_music_black_24dp"
+            android:text="@string/category_library" />
+
+    </LinearLayout>
+</LinearLayout>

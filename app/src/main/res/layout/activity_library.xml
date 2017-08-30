@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+
+    tools:context="com.udacitymusicexample.udacitymusic.LibraryActivity">
+
+
+    <LinearLayout
+        style="@style/NavigationStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/artistXmlFromLibrary"
+            style="@style/TextWithoutBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_artists" />
+
+        <TextView
+            android:id="@+id/albunsXmlFromLibrary"
+            style="@style/TextWithoutBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_albuns" />
+
+        <TextView
+            android:id="@+id/playlistsXmlFromLibrary"
+            style="@style/TextWithoutBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_all_songs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationBarlibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/homeXmlFromLibrary"
+            style="@style/NavigationStyle"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:text="@string/category_home" />
+
+        <TextView
+            android:id="@+id/searchXmlFromLibrary"
+            style="@style/NavigationStyle"
+            android:drawableTop="@drawable/ic_search_black_24dp"
+            android:text="@string/category_search" />
+
+        <TextView
+            android:id="@+id/libraryXmlFromLibrary"
+            style="@style/NavigationStyle"
+            android:drawableTop="@drawable/ic_library_music_black_24dp"
+            android:text="@string/category_library" />
+
+    </LinearLayout>
+</LinearLayout>
