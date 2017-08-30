@@ -25,7 +25,7 @@ public class ArtistActivity extends AppCompatActivity implements AdapterView.OnI
 
         ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("John Hindemith", R.drawable.family_mother));
-        words.add(new Word("Udaci Beatles", R.drawable.family_mother));
+        words.add(new Word("Udaci Beatleshaha", R.drawable.family_mother));
         words.add(new Word("Udaci Head", R.drawable.family_mother));
 
 
