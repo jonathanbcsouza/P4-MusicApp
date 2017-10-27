@@ -1,6 +1,7 @@
-package com.udacitymusicexample.udacitymusic;
+package com.udacity.music;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,9 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+
+        TextView jonathanHeaders = (TextView) findViewById(R.id.headerSearch);
+        jonathanHeaders.setText(R.string.header_search);
 
         TextView search = (TextView) findViewById(R.id.homeXmlFromSearch);
         search.setOnClickListener(new View.OnClickListener()

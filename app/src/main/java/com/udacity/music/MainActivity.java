@@ -1,4 +1,4 @@
-package com.udacitymusicexample.udacitymusic;
+package com.udacity.music;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener()
 
         {
-
             @Override
             public void onClick(View view) {
 

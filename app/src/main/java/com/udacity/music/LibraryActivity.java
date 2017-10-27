@@ -1,6 +1,7 @@
-package com.udacitymusicexample.udacitymusic;
+package com.udacity.music;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,12 +14,13 @@ public class LibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
 
+        TextView jonathanHeaders = (TextView) findViewById(R.id.headerLibrary);
+        jonathanHeaders.setText(R.string.header_library);
 
         TextView home = (TextView) findViewById(R.id.homeXmlFromLibrary);
         home.setOnClickListener(new View.OnClickListener()
 
         {
-
             @Override
             public void onClick(View view) {
 
@@ -31,7 +33,6 @@ public class LibraryActivity extends AppCompatActivity {
         library.setOnClickListener(new View.OnClickListener()
 
         {
-
             @Override
             public void onClick(View view) {
 
@@ -44,7 +45,6 @@ public class LibraryActivity extends AppCompatActivity {
         artist.setOnClickListener(new View.OnClickListener()
 
         {
-
             @Override
             public void onClick(View view) {
 
@@ -58,7 +58,6 @@ public class LibraryActivity extends AppCompatActivity {
         albums.setOnClickListener(new View.OnClickListener()
 
         {
-
             @Override
             public void onClick(View view) {
 
@@ -71,7 +70,6 @@ public class LibraryActivity extends AppCompatActivity {
         playlists.setOnClickListener(new View.OnClickListener()
 
         {
-
             @Override
             public void onClick(View view) {
 

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
     android:orientation="vertical"
-    tools:context="com.udacitymusicexample.udacitymusic.MainActivity">
+    tools:context="com.udacity.music.MainActivity">
 
 
     <LinearLayout
@@ -14,7 +14,6 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical">
-
 
         <ImageView
             style="@style/NavigationStyle"
@@ -36,11 +35,10 @@
             style="@style/NavigationStyle"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-
             android:layout_weight="3"
             android:background="?android:attr/selectableItemBackground"
             android:gravity="top"
-            android:text="Listen Music Now!"
+            android:text="@string/slogan"
             android:textAlignment="center"
             android:textSize="18sp" />
 

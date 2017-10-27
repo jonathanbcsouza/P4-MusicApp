@@ -1,4 +1,4 @@
-package com.udacitymusicexample.udacitymusic;
+package com.udacity.music;
 
 
 public class Word {
@@ -7,14 +7,14 @@ public class Word {
     private int mAudioResourceId;
 
     /**
-     * Image resource ID for the word
-     */
-    private int mImageResourceId = NO_IMAGE_PROVIDED;
-
-    /**
      * Constant value that represents no image was provided for this word
      */
     private static final int NO_IMAGE_PROVIDED = -1;
+
+    /**
+     * Image resource ID for the word
+     */
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
 
 
     public Word(String musicName, int imageResourceId) {
@@ -30,16 +30,12 @@ public class Word {
 
     }
 
-
     public String getMusicName() {
         return mMusicName;
     }
-
-
     public int getAudioResourceId() {
         return mAudioResourceId;
     }
-
 
     /**
      * Return the image resource ID of the word.

@@ -4,9 +4,14 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
     android:orientation="vertical"
+    tools:context="com.udacity.music.LibraryActivity">
 
-    tools:context="com.udacitymusicexample.udacitymusic.LibraryActivity">
-
+    <TextView
+        android:id="@+id/headerLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:textColor="@color/colorUdacityLogo" />
 
     <LinearLayout
         style="@style/NavigationStyle"
@@ -15,27 +20,26 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-
         <TextView
             android:id="@+id/artistXmlFromLibrary"
             style="@style/TextWithoutBackground"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/category_artists" />
+            android:text="@string/library_artists" />
 
         <TextView
             android:id="@+id/albunsXmlFromLibrary"
             style="@style/TextWithoutBackground"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/category_albuns" />
+            android:text="@string/library_albuns" />
 
         <TextView
             android:id="@+id/playlistsXmlFromLibrary"
             style="@style/TextWithoutBackground"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/category_all_songs" />
+            android:text="@string/library_all_songs" />
     </LinearLayout>
 
     <LinearLayout
@@ -51,19 +55,19 @@
             android:id="@+id/homeXmlFromLibrary"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_home_black_24dp"
-            android:text="@string/category_home" />
+            android:text="@string/screen_home" />
 
         <TextView
             android:id="@+id/searchXmlFromLibrary"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_search_black_24dp"
-            android:text="@string/category_search" />
+            android:text="@string/screen_search" />
 
         <TextView
             android:id="@+id/libraryXmlFromLibrary"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_library_music_black_24dp"
-            android:text="@string/category_library" />
+            android:text="@string/screen_library" />
 
     </LinearLayout>
 </LinearLayout>

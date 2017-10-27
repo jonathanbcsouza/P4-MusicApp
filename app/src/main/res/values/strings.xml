@@ -1,42 +1,59 @@
 <resources>
     <string name="app_name">Udacity Music</string>
 
-    <!-- Activity Information -->
-    <string name="text_home_activity">
-        Home,HomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHome
-        HomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomev.
-        HomeHomevvvvvvvvvFImHomeHomeHomeHomeHomeHomeHomeHomeHome
+    <!-- Activity Informations -->
+    <string name="header_home">
+        Home - Here show for you the last three song that was played.
     </string>
 
-    <string name="text_artist_header">
+    <string name="header_search">
+        Search Screen - Here its useful to search some song that have inside your library ou phone.
+    </string>
+
+    <string name="header_library">
+        Library Screen - Here is useful to choose what Artist, Album or song that you want to hear.
+    </string>
+
+    <!-- Creating Headers-->
+    <string name="text_setSize_header">
+        UdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdacious
+        UdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdacious
+        UdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdacious
+    </string>
+
+    <string name="header_artist">
         Artist Screen - this displays a list of songs based on the mood chosen in MainActivity
         screen. This uses ListView and ArrayAdapter to display the list. When clicked on any list
         item, MediaActivity (next screen) is launched to listen to the song.
     </string>
 
-    <string name="text_album_header">
-    ALBUNS - albsfuns albfuns albudgfns aglbuns alhbuns galdbuns albbns albuns balbuns albubns
+    <string name="header_album">
+    Albuns Screen - here is possible to view all albuns its available on you smartphone for you hear.
         </string>
 
-    <string name="text_songs_header">
-        Songs Screen - sonsg ssadasong sdaong song fassong sonfasfg sosng song gsongfasd soneg song
-        sonsad song sadsong song asdsong song songdsa sonsg song soang song asdsong song 3sonvg sovng
-    </string>
-    <string name="text_mediaplayer_header">
-        Media Player - dfplady plasfd plasd plfay f pfdgshlay plajy play playk pdsfaky plah plfhay pdhlay
-         pldsaydsplay play dplay play plfay play pldfay pffdhlay fplay plasdy plfay play asdpldfadf
+    <string name="header_allSongs">
+        All Songs Screen - This view show the list with all songs available in your smartphone.
     </string>
 
-    <!-- Navigation Bar [CHAR LIMIT=??] -->
-    <string name="category_artists">Artists</string>
-    <string name="category_library">Library</string>
-    <string name="category_search">Search Songs</string>
-    <string name="category_home">Home</string>
-    <string name="category_albuns">Albuns</string>
-    <string name="category_all_songs">All Songs</string>
+    <!-- Media player -->
+    <string name="header_mediaplayer">
+        Media Player - This screen have all controls for you play, pause or stop songs.
+    </string>
+
+    <!-- Home Screen Navigation Bar [CHAR LIMIT=??] -->
+    <string name="screen_home">Home</string>
+    <string name="screen_library">Library</string>
+    <string name="screen_search">Search Songs</string>
+    <string name="last_songs1">Last song played 1</string>
+    <string name="last_songs2">Last song played 2</string>
+    <string name="last_songs3">Last song played 3</string>
+
+    <!-- Library Navigation Bar [CHAR LIMIT=??] -->
+    <string name="library_artists">Artists</string>
+    <string name="library_albuns">Albuns</string>
+    <string name="library_all_songs">All Songs</string>
 
     <!-- ?????????????????] -->
-
     <string name="title_activity_artist">ArtistActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -47,14 +64,15 @@
     <string name="artist2">RadioHead</string>
     <string name="artist3">Olafur Arnalds</string>
     <string name="artist4">Audio Slave</string>
-    <string name="artist5">Nirvana</string>
-    <string name="artist6">Nirvana</string>
-    <string name="artist7">Nirvana</string>
-    <string name="artist8">Nirvana</string>
-    <string name="artist9">Nirvana</string>
-    <string name="artist10">Nirvana</string>
+    <string name="artist5">The Beatles</string>
+    <string name="artist6">DeadMau5</string>
+    <string name="artist7">Led Zeppelin</string>
+    <string name="artist8">System Of A Down</string>
+    <string name="artist9">Udacious Band</string>
+    <string name="artist10">Beethoven</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slogan">Listen Music Now!</string>
 
 </resources>

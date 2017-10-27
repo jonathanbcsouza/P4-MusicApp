@@ -1,4 +1,4 @@
-package com.udacitymusicexample.udacitymusic;
+package com.udacity.music;
 
 import org.junit.Test;
 

@@ -5,29 +5,33 @@
     android:background="@drawable/gradient"
 
     android:orientation="vertical"
-    tools:context="com.udacitymusicexample.udacitymusic.MainActivity">
+    tools:context="com.udacity.music.MainActivity">
 
+    <TextView
+        android:id="@+id/headerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:textColor="@color/colorUdacityLogo" />
 
     <LinearLayout
         style="@style/NavigationStyle"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
         android:weightSum="1">
-
 
         <EditText
             android:id="@+id/menu_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="0.27"
             android:background="@drawable/gradient"
-            android:hint="Search here"
             android:gravity="center"
+            android:hint="Search here"
             android:textColor="#FFF"
-            android:textColorHint="#FFF"
-            android:layout_weight="0.27" />
-
+            android:textColorHint="#7affffff" />
 
     </LinearLayout>
 
@@ -44,18 +48,18 @@
             android:id="@+id/homeXmlFromSearch"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_home_black_24dp"
-            android:text="@string/category_home" />
+            android:text="@string/screen_home" />
 
         <TextView
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_search_black_24dp"
-            android:text="@string/category_search" />
+            android:text="@string/screen_search" />
 
         <TextView
             android:id="@+id/libraryXmlFromSearch"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_library_music_black_24dp"
-            android:text="@string/category_library" />
+            android:text="@string/screen_library" />
 
     </LinearLayout>
 </LinearLayout>

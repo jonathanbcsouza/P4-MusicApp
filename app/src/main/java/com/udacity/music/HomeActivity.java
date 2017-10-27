@@ -1,7 +1,6 @@
-package com.udacitymusicexample.udacitymusic;
+package com.udacity.music;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,8 +14,12 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        TextView search = (TextView) findViewById(R.id.searchXml);
-        search.setOnClickListener(new View.OnClickListener() {
+        TextView jonathanHeaders = (TextView) findViewById(R.id.headerHome);
+        jonathanHeaders.setText(R.string.header_home);
+
+        // Go to Search screen
+        TextView syncSearch = (TextView) findViewById(R.id.searchXml);
+        syncSearch.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -26,8 +29,9 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        TextView library = (TextView) findViewById(R.id.libraryXml);
-        library.setOnClickListener(new View.OnClickListener()
+        // Go to library screen
+        TextView syncLibrary = (TextView) findViewById(R.id.libraryXml);
+        syncLibrary.setOnClickListener(new View.OnClickListener()
 
         {
 

@@ -1,4 +1,4 @@
-package com.udacitymusicexample.udacitymusic;
+package com.udacity.music;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -11,21 +11,20 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.udacitymusicexample.udacitymusic.R;
+import com.udacity.music.R;
 
 import java.util.ArrayList;
 
 public class AllSongs extends AppCompatActivity {
 
     private MediaPlayer mMediaPlayer;
-
     private AudioManager mAudioManager;
-
 
     /**
      * This listener gets triggered whenever the audio focus changes
      * (i.e., we gain or lose audio focus because of another app or device).
      */
+
     private AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
         @Override
         public void onAudioFocusChange(int focusChange) {
@@ -55,6 +54,7 @@ public class AllSongs extends AppCompatActivity {
      * This listener gets triggered when the {@link MediaPlayer} has completed
      * playing the audio file.
      */
+
     private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
@@ -70,23 +70,16 @@ public class AllSongs extends AppCompatActivity {
 
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-
         final ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("John Hindemith", R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word("Udaci Beatles", R.drawable.ic_play_arrow_white_24dp, R.raw.dead_man_swag));
-        words.add(new Word("Udaci Head", R.drawable.ic_play_arrow_white_24dp, R.raw.im_so_happy));
-        words.add(new Word("Udaci Maiden", R.drawable.ic_play_arrow_white_24dp, R.raw.martin_garrix));
-        words.add(new Word("Udaci Maiden", R.drawable.ic_play_arrow_white_24dp, R.raw.white_horse));
+        words.add(new Word("Dead Man Swag", R.drawable.ic_play_arrow_white_24dp, R.raw.dead_man_swag));
+        words.add(new Word("I'm So Happy", R.drawable.ic_play_arrow_white_24dp, R.raw.im_so_happy));
+        words.add(new Word("Electric way", R.drawable.ic_play_arrow_white_24dp, R.raw.martin_garrix));
+        words.add(new Word("White Horse", R.drawable.ic_play_arrow_white_24dp, R.raw.white_horse));
 
         WordAdapter itemsAdapter = new WordAdapter(this, words);
-
         ListView listView = (ListView) findViewById(R.id.word_list);
-
         listView.setAdapter(itemsAdapter);
-
-        ViewGroup headerView = (ViewGroup) getLayoutInflater().inflate(R.layout.instructions_header, listView, false);
-        TextView textHeader = (TextView) headerView.findViewById(R.id.text_listview_header);
-        textHeader.setText(getString(R.string.text_songs_header));
 
         // Set a click listener to play the audio when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -123,7 +116,6 @@ public class AllSongs extends AppCompatActivity {
         });
     }
 
-
     private void releaseMediaPlayer() {
         // If the media player is not null, then it may be currently playing a sound.
         if (mMediaPlayer != null) {
@@ -135,7 +127,6 @@ public class AllSongs extends AppCompatActivity {
             // setting the media player to null is an easy way to tell that the media player
             // is not configured to play an audio file at the moment.
             mMediaPlayer = null;
-
             mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
 
         }

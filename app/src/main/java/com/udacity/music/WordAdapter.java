@@ -1,4 +1,4 @@
-package com.udacitymusicexample.udacitymusic;
+package com.udacity.music;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -34,10 +34,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.music_text_view);
         nameTextView.setText(currentWord.getMusicName());
 
-        // Find the ImageView
         ImageView defaultImageView = (ImageView) listItemView.findViewById(R.id.image_view);
-        // Get the version number from the current AndroidFlavor object and
-        // set this text on the number TextView
 
         if (currentWord.hasImage()) {
             defaultImageView.setImageResource(currentWord.getImageResourceId());

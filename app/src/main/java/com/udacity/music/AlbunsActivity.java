@@ -1,54 +1,53 @@
-package com.udacitymusicexample.udacitymusic;
+package com.udacity.music;
 
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.udacity.music.R;
 
 import java.util.ArrayList;
 
-public class ArtistActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class AlbunsActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    private String testeString = "ola";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
+        final ArrayList<Word> albuns = new ArrayList<Word>();
 
-        ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("John Hindemith", R.drawable.family_mother));
-        words.add(new Word("Udaci Beatleshaha", R.drawable.family_mother));
-        words.add(new Word("Udaci Head", R.drawable.family_mother));
+        albuns.add(new Word("The Best of Udacity Vol.1", R.drawable.album1));
+        albuns.add(new Word("The Best of Udacity Vol.2", R.drawable.album1));
+        albuns.add(new Word("The Best of Udacity Vol.3", R.drawable.album1));
+        albuns.add(new Word("The Best of Udacity Vol.4", R.drawable.album1));
 
-
-        WordAdapter itemsAdapter = new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.word_list);
-        listView.setAdapter(itemsAdapter);
 
-
-        // Inflate header view
+        // Getting Model of Header from XML
         ViewGroup headerView = (ViewGroup) getLayoutInflater().inflate(R.layout.instructions_header, listView, false);
-        TextView textHeader = (TextView) headerView.findViewById(R.id.text_listview_header);
-        textHeader.setText(getString(R.string.text_artist_header));
-
+        TextView makeHeader = (TextView) headerView.findViewById(R.id.text_listview_header);
+        // Setting text on Header
+        makeHeader.setText(getString(R.string.header_album));
+        // Add header view to the ListView
         listView.addHeaderView(headerView);
+
+        // Create PlayListAdapter object to display list view
+        WordAdapter itemsAdapter = new WordAdapter(this, albuns);
+        listView.setAdapter(itemsAdapter);
 
         // Set OnClickListener on ListView to identify the item on ListView clicked by user
         // Text on the ListView item clicked is passed on to PlaylistActivity
         listView.setOnItemClickListener(this);
+
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
     }
 }
-
