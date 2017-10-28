@@ -13,17 +13,15 @@ import java.util.ArrayList;
 
 public class ArtistActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    private String testeString = "ola";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word(getString(R.string.artist1), R.drawable.family_mother));
-        words.add(new Word("Radio Head", R.drawable.family_mother));
-        words.add(new Word("Chico Buarque", R.drawable.family_mother));
+        words.add(new Word(getString(R.string.artist1), R.drawable.artist_john_hindemith));
+        words.add(new Word("Radio Head", R.drawable.artist_radiohead));
+        words.add(new Word("Nirvana", R.drawable.artist_nirvana));
 
         WordAdapter itemsAdapter = new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.word_list);
