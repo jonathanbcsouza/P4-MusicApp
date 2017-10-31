@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class AllSongs extends AppCompatActivity {
 
     private MediaPlayer mMediaPlayer;
+    private MediaPlayer selectPosition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,6 @@ public class AllSongs extends AppCompatActivity {
         final WordAdapter itemsAdapter = new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.word_list);
         listView.setAdapter(itemsAdapter);
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, final int position, long l) {
@@ -53,8 +53,12 @@ public class AllSongs extends AppCompatActivity {
                     public void onCompletion(MediaPlayer mp) {
 
                         Word songPosition = words.get(position);
-                        String aaa = songPosition.getMusicName().toUpperCase();
-                        Toast.makeText(AllSongs.this, "The song " + aaa + " is finished", Toast.LENGTH_SHORT).show();
+
+                        selectPosition = MediaPlayer.create(AllSongs.this, songPosition.getAudioResourceId());
+                        selectPosition.setTextColor
+
+                        String figureOutMusicName = songPosition.getMusicName().toUpperCase();
+                        Toast.makeText(AllSongs.this, "The song " + figureOutMusicName + " is finished", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
