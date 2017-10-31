@@ -55,7 +55,7 @@ public class AllSongs extends AppCompatActivity {
                         Word songPosition = words.get(position);
 
                         selectPosition = MediaPlayer.create(AllSongs.this, songPosition.getAudioResourceId());
-                        selectPosition.setTextColor
+                        selectPosition.setTextColor ????????
 
                         String figureOutMusicName = songPosition.getMusicName().toUpperCase();
                         Toast.makeText(AllSongs.this, "The song " + figureOutMusicName + " is finished", Toast.LENGTH_SHORT).show();
