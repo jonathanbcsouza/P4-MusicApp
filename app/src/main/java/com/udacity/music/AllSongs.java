@@ -48,15 +48,17 @@ public class AllSongs extends AppCompatActivity {
                 //Start the song
                 mMediaPlayer.start();
 
-                //Callback for action when the audio stopped WAITING STACK OVERFLOW ANSWER
+                //Callback for action when the audio stopped
                 mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     public void onCompletion(MediaPlayer mp) {
 
                         Word songPosition = words.get(position);
 
-                        selectPosition = MediaPlayer.create(AllSongs.this, songPosition.getAudioResourceId());
-                        selectPosition.setTextColor ????????
+                        // Change the color when the audio selected has finish ??? ERROR HERE, function will be finish for next update.
+                        // selectPosition = MediaPlayer.create(AllSongs.this, songPosition.getAudioResourceId());
+                        //selectPosition.setTextColor ????????
 
+                        // Show a toast messagem when the audio selected has finish
                         String figureOutMusicName = songPosition.getMusicName().toUpperCase();
                         Toast.makeText(AllSongs.this, "The song " + figureOutMusicName + " is finished", Toast.LENGTH_SHORT).show();
                     }

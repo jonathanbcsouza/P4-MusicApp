@@ -27,7 +27,6 @@ public class Word {
         mMusicName = musicName;
         mImageResourceId = imageResourceId;
         mAudioResourceId = audioResourceId;
-
     }
 
     public String getMusicName() {

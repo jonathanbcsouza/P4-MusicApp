@@ -41,7 +41,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
             defaultImageView.setVisibility(View.VISIBLE);
 
         } else {
-            // Esta linha oculta totalmente a imagem
+            // This line make the image stay invisible
             defaultImageView.setVisibility(View.GONE);
         }
 
