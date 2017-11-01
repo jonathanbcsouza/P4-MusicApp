@@ -66,15 +66,15 @@ public class LibraryActivity extends AppCompatActivity {
             }
         });
 
-        TextView playlists = (TextView) findViewById(R.id.playlistsXmlFromLibrary);
-        playlists.setOnClickListener(new View.OnClickListener()
+        TextView allSongs = (TextView) findViewById(R.id.playlistsXmlFromLibrary);
+        allSongs.setOnClickListener(new View.OnClickListener()
 
         {
             @Override
             public void onClick(View view) {
 
-                Intent goToPlaylists = new Intent(LibraryActivity.this, AllSongs.class);
-                startActivity(goToPlaylists);
+                Intent goToAllSongs = new Intent(LibraryActivity.this, AllSongs.class);
+                startActivity(goToAllSongs);
             }
         });
 

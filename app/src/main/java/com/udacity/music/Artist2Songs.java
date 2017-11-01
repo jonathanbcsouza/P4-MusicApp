@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class AllSongs extends AppCompatActivity {
+public class Artist2Songs extends AppCompatActivity {
 
     private MediaPlayer mMediaPlayer;
 
@@ -20,15 +20,10 @@ public class AllSongs extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word(getString(R.string.artist1music1), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist1music2), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist1music3), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
         words.add(new Word(getString(R.string.artist2music1), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
         words.add(new Word(getString(R.string.artist2music2), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
         words.add(new Word(getString(R.string.artist2music3), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist3music1), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist3music2), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist3music3), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
+
 
         final WordAdapter itemsAdapter = new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.word_list);
@@ -42,7 +37,7 @@ public class AllSongs extends AppCompatActivity {
                 final Word word = words.get(position);
 
                 //Config player to correct position choosed
-                mMediaPlayer = MediaPlayer.create(AllSongs.this, word.getAudioResourceId());
+                mMediaPlayer = MediaPlayer.create(Artist2Songs.this, word.getAudioResourceId());
 
                 //Start the song
                 mMediaPlayer.start();
@@ -59,7 +54,7 @@ public class AllSongs extends AppCompatActivity {
 
                         // Show a toast messagem when the audio selected has finish
                         String figureOutMusicName = songPosition.getMusicName().toUpperCase();
-                        Toast.makeText(AllSongs.this, "The song " + figureOutMusicName + " is finished", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Artist2Songs.this, "The song " + figureOutMusicName + " is finished", Toast.LENGTH_SHORT).show();
                     }
                 });
             }

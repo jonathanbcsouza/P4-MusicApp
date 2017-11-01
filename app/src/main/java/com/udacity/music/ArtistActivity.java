@@ -1,6 +1,6 @@
 package com.udacity.music;
 
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -35,9 +36,30 @@ public class ArtistActivity extends AppCompatActivity implements AdapterView.OnI
         // Add header view to the ListView
         listView.addHeaderView(headerView);
 
-        // Set OnClickListener on ListView to identify the item on ListView clicked by user
-        // Text on the ListView item clicked is passed on to PlaylistActivity
-        listView.setOnItemClickListener(this);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //Found the position that was clicked
+                if (position == 1) {
+
+                    Intent goToAllArtist1Songs = new Intent(ArtistActivity.this, Artist1Songs.class);
+                    startActivity(goToAllArtist1Songs);
+                }
+
+                if (position == 2) {
+
+                    Intent goToAllSongs = new Intent(ArtistActivity.this, Artist2Songs.class);
+                    startActivity(goToAllSongs);
+                }
+
+                if (position == 3) {
+
+                    Intent goToAllSongs = new Intent(ArtistActivity.this, Artist3Songs.class);
+                    startActivity(goToAllSongs);
+                }
+            }
+        });
     }
 
     @Override
@@ -45,4 +67,3 @@ public class ArtistActivity extends AppCompatActivity implements AdapterView.OnI
 
     }
 }
-

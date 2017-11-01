@@ -59,17 +59,36 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
-    <!-- Artists Names [CHAR LIMIT=??] -->
+    <!-- Artists Names and song [CHAR LIMIT=??] -->
     <string name="artist1">John Hindemith</string>
+    <string name="artist1music1">A1-Musica um</string>
+    <string name="artist1music2">A1-Musica dois</string>
+    <string name="artist1music3">A1-Musica tres</string>
+    <string name="artist1music4">A1-Musica quatro</string>
+
     <string name="artist2">RadioHead</string>
+    <string name="artist2music1">A2-Musica um</string>
+    <string name="artist2music2">A2-Musica dois</string>
+    <string name="artist2music3">A2-Musica tres</string>
+    <string name="artist2music4">A2-Musica quatro</string>
+
     <string name="artist3">Olafur Arnalds</string>
+    <string name="artist3music1">A3-Musica um</string>
+    <string name="artist3music2">A3-Musica dois</string>
+    <string name="artist3music3">A3-Musica tres</string>
+    <string name="artist3music4">A3-Musica quatro</string>
+
     <string name="artist4">Audio Slave</string>
+    <string name="artist4music1">Musica um</string>
+    <string name="artist4music2">Musica dois</string>
+    <string name="artist4music3">Musica tres</string>
+    <string name="artist4music4">Musica quatro</string>
+
     <string name="artist5">The Beatles</string>
-    <string name="artist6">DeadMau5</string>
-    <string name="artist7">Led Zeppelin</string>
-    <string name="artist8">System Of A Down</string>
-    <string name="artist9">Udacious Band</string>
-    <string name="artist10">Beethoven</string>
+    <string name="artist5music1">Musica um</string>
+    <string name="artist5music2">Musica dois</string>
+    <string name="artist5music3">Musica tres</string>
+    <string name="artist5music4">Musica quatro</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

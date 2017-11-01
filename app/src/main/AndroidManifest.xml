@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.udacity.music.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,23 +17,33 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.udacity.music.HomeActivity"
+            android:name=".HomeActivity"
             android:label="@string/screen_home" />
         <activity
-            android:name="com.udacity.music.SearchActivity"
+            android:name=".SearchActivity"
             android:label="@string/screen_search" />
         <activity
-            android:name="com.udacity.music.LibraryActivity"
+            android:name=".LibraryActivity"
             android:label="@string/screen_library" />
         <activity
-            android:name="com.udacity.music.ArtistActivity"
+            android:name=".ArtistActivity"
             android:label="@string/library_artists" />
         <activity
-            android:name="com.udacity.music.AlbunsActivity"
+            android:name=".Artist1Songs"
+            android:label="@string/artist1" />
+        <activity
+            android:name=".Artist2Songs"
+            android:label="@string/artist2" />
+        <activity
+            android:name=".Artist3Songs"
+            android:label="@string/artist3" />
+        <activity
+            android:name=".AlbunsActivity"
             android:label="@string/library_albuns" />
         <activity
-            android:name="com.udacity.music.AllSongs"
+            android:name=".AllSongs"
             android:label="@string/library_all_songs" />
+
     </application>
 
 </manifest>
