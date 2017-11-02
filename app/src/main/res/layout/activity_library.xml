@@ -28,14 +28,14 @@
             android:text="@string/library_artists" />
 
         <TextView
-            android:id="@+id/albunsXmlFromLibrary"
+            android:id="@+id/genreXmlFromLibrary"
             style="@style/TextWithoutBackground"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/library_genre" />
 
         <TextView
-            android:id="@+id/playlistsXmlFromLibrary"
+            android:id="@+id/allSongXmlFromLibrary"
             style="@style/TextWithoutBackground"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

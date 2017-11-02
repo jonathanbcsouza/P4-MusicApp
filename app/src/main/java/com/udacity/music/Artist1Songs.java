@@ -1,5 +1,6 @@
 package com.udacity.music;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Artist1Songs extends AppCompatActivity {
@@ -57,5 +59,6 @@ public class Artist1Songs extends AppCompatActivity {
                 });
             }
         });
+
     }
 }

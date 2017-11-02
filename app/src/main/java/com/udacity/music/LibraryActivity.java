@@ -53,7 +53,7 @@ public class LibraryActivity extends AppCompatActivity {
         });
 
 
-        TextView genre = (TextView) findViewById(R.id.albunsXmlFromLibrary);
+        TextView genre = (TextView) findViewById(R.id.genreXmlFromLibrary);
         genre.setOnClickListener(new View.OnClickListener()
 
         {
@@ -65,7 +65,7 @@ public class LibraryActivity extends AppCompatActivity {
             }
         });
 
-        TextView allSongs = (TextView) findViewById(R.id.playlistsXmlFromLibrary);
+        TextView allSongs = (TextView) findViewById(R.id.allSongXmlFromLibrary);
         allSongs.setOnClickListener(new View.OnClickListener()
 
         {
@@ -74,6 +74,7 @@ public class LibraryActivity extends AppCompatActivity {
 
                 Intent goToAllSongs = new Intent(LibraryActivity.this, AllSongs.class);
                 startActivity(goToAllSongs);
+
             }
         });
 
