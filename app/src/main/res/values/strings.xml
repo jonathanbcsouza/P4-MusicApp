@@ -1,15 +1,14 @@
 <resources>
     <string name="app_name">Udacity Music</string>
+    <string name="slogan">Listen Music Now!</string>
 
     <!-- Activity Informations -->
     <string name="header_home">
         Home - Here show for you the last three song that was played.
     </string>
-
     <string name="header_search">
         Search Screen - Here its useful to search some song that have inside your library ou phone.
     </string>
-
     <string name="header_library">
         Library Screen - Here is useful to choose what Artist, Album or song that you want to hear.
     </string>
@@ -20,27 +19,22 @@
         UdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdacious
         UdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdacious
     </string>
-
     <string name="header_artist">
         Artist Screen - this displays a list of songs based on the mood chosen in MainActivity
         screen. This uses ListView and ArrayAdapter to display the list. When clicked on any list
         item, MediaActivity (next screen) is launched to listen to the song.
     </string>
-
-    <string name="header_album">
-    Albuns Screen - here is possible to view all albuns its available on you smartphone for you hear.
+    <string name="header_genre">
+    Genre Screen - Here is possible to choose which genre that you want.
         </string>
-
     <string name="header_allSongs">
         All Songs Screen - This view show the list with all songs available in your smartphone.
     </string>
-
-    <!-- Media player -->
-    <string name="header_mediaplayer">
+    <string name="header_mediaPlayer">
         Media Player - This screen have all controls for you play, pause or stop songs.
     </string>
 
-    <!-- Home Screen Navigation Bar [CHAR LIMIT=??] -->
+    <!-- Home Screen Navigation Bar -->
     <string name="screen_home">Home</string>
     <string name="screen_library">Library</string>
     <string name="screen_search">Search Songs</string>
@@ -48,50 +42,40 @@
     <string name="last_songs2">Last song played 2</string>
     <string name="last_songs3">Last song played 3</string>
 
-    <!-- Library Navigation Bar [CHAR LIMIT=??] -->
+    <!-- Library Navigation Bar -->
     <string name="library_artists">Artists</string>
-    <string name="library_albuns">Albuns</string>
+    <string name="library_genre">Genre</string>
     <string name="library_all_songs">All Songs</string>
 
-    <!-- ?????????????????] -->
-    <string name="title_activity_artist">ArtistActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-
-    <!-- Artists Names and song [CHAR LIMIT=??] -->
+    <!-- Artists names and they songs -->
     <string name="artist1">John Hindemith</string>
-    <string name="artist1music1">A1-Musica um</string>
-    <string name="artist1music2">A1-Musica dois</string>
-    <string name="artist1music3">A1-Musica tres</string>
-    <string name="artist1music4">A1-Musica quatro</string>
+    <string name="artist1music1">Enlightening</string>
+    <string name="artist1music2">Darkness and Light</string>
 
-    <string name="artist2">RadioHead</string>
-    <string name="artist2music1">A2-Musica um</string>
-    <string name="artist2music2">A2-Musica dois</string>
-    <string name="artist2music3">A2-Musica tres</string>
-    <string name="artist2music4">A2-Musica quatro</string>
+    <string name="artist2">Felguk</string>
+    <string name="artist2music1">Dead Man Swag</string>
+    <string name="artist2music2">White Horse</string>
+    <string name="artist2music3">Hands Up For Detroit</string>
 
-    <string name="artist3">Olafur Arnalds</string>
-    <string name="artist3music1">A3-Musica um</string>
-    <string name="artist3music2">A3-Musica dois</string>
-    <string name="artist3music3">A3-Musica tres</string>
-    <string name="artist3music4">A3-Musica quatro</string>
+    <string name="artist3">AudioSlave</string>
+    <string name="artist3music1">Cochise</string>
+    <string name="artist3music2">Show Me How To Live</string>
+    <string name="artist3music3">Gasoline</string>
+    <string name="artist3music4">What You Are</string>
+    <string name="artist3music5">Like A Stone</string>
+    <string name="artist3music6">Set It Off</string>
+    <string name="artist3music7">Shadow On The Sun</string>
+    <string name="artist3music8">I Am The Highway</string>
+    <string name="artist3music9">Exploder</string>
+    <string name="artist3music10">Hypnotize</string>
+    <string name="artist3music11">Bring Back</string>
+    <string name="artist3music12">Light My Way</string>
+    <string name="artist3music13">A Getaway Car</string>
+    <string name="artist3music14">The Last Remaining Light</string>
 
-    <string name="artist4">Audio Slave</string>
-    <string name="artist4music1">Musica um</string>
-    <string name="artist4music2">Musica dois</string>
-    <string name="artist4music3">Musica tres</string>
-    <string name="artist4music4">Musica quatro</string>
-
-    <string name="artist5">The Beatles</string>
-    <string name="artist5music1">Musica um</string>
-    <string name="artist5music2">Musica dois</string>
-    <string name="artist5music3">Musica tres</string>
-    <string name="artist5music4">Musica quatro</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="slogan">Listen Music Now!</string>
+    <!-- Genres -->
+    <string name="genre_alternative">Alternative</string>
+    <string name="genre_electronic">Dance/Electronic</string>
+    <string name="genre_rock">Rock</string>
 
 </resources>

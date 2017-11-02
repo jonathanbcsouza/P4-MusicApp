@@ -6,7 +6,6 @@
     android:orientation="vertical"
     tools:context="com.udacity.music.MainActivity">
 
-
     <LinearLayout
         android:id="@+id/navigationBar1"
         style="@style/NavigationStyle"

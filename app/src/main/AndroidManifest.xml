@@ -38,8 +38,8 @@
             android:name=".Artist3Songs"
             android:label="@string/artist3" />
         <activity
-            android:name=".AlbunsActivity"
-            android:label="@string/library_albuns" />
+            android:name=".Genre"
+            android:label="@string/library_genre" />
         <activity
             android:name=".AllSongs"
             android:label="@string/library_all_songs" />

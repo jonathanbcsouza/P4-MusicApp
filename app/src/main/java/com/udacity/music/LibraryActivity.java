@@ -1,7 +1,6 @@
 package com.udacity.music;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -54,15 +53,15 @@ public class LibraryActivity extends AppCompatActivity {
         });
 
 
-        TextView albums = (TextView) findViewById(R.id.albunsXmlFromLibrary);
-        albums.setOnClickListener(new View.OnClickListener()
+        TextView genre = (TextView) findViewById(R.id.albunsXmlFromLibrary);
+        genre.setOnClickListener(new View.OnClickListener()
 
         {
             @Override
             public void onClick(View view) {
 
-                Intent goToAlbuns = new Intent(LibraryActivity.this, AlbunsActivity.class);
-                startActivity(goToAlbuns);
+                Intent goToGenre = new Intent(LibraryActivity.this, Genre.class);
+                startActivity(goToGenre);
             }
         });
 

@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -21,8 +20,8 @@ public class ArtistActivity extends AppCompatActivity implements AdapterView.OnI
 
         ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word(getString(R.string.artist1), R.drawable.artist_john_hindemith));
-        words.add(new Word("Radio Head", R.drawable.artist_radiohead));
-        words.add(new Word("Nirvana", R.drawable.artist_nirvana));
+        words.add(new Word(getString(R.string.artist2), R.drawable.artist_felguk));
+        words.add(new Word(getString(R.string.artist3), R.drawable.artist_audioslave));
 
         WordAdapter itemsAdapter = new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.word_list);

@@ -20,10 +20,20 @@ public class Artist3Songs extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word(getString(R.string.artist3music1), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist3music2), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist3music3), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-
+        words.add(new Word(getString(R.string.artist3music1), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave1_cochise));
+        words.add(new Word(getString(R.string.artist3music2), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave2_show_me_how_to_live));
+        words.add(new Word(getString(R.string.artist3music3), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave3_gasoline));
+        words.add(new Word(getString(R.string.artist3music4), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave4_what_you_are));
+        words.add(new Word(getString(R.string.artist3music5), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave5_like_a_stone));
+        words.add(new Word(getString(R.string.artist3music6), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave6_set_it_off));
+        words.add(new Word(getString(R.string.artist3music7), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave7_shadow_on_the_sun));
+        words.add(new Word(getString(R.string.artist3music8), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave8_i_am_the_highway));
+        words.add(new Word(getString(R.string.artist3music9), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave9_exploder));
+        words.add(new Word(getString(R.string.artist3music10), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave10_hypnotize));
+        words.add(new Word(getString(R.string.artist3music11), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave11_bring_back));
+        words.add(new Word(getString(R.string.artist3music12), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave12_light_my_way));
+        words.add(new Word(getString(R.string.artist3music13), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave13_getaway_car));
+        words.add(new Word(getString(R.string.artist3music14), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave14_the_last_remaining_light));
 
         final WordAdapter itemsAdapter = new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.word_list);

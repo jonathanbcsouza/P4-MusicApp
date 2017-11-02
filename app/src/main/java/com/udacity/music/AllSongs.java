@@ -20,15 +20,8 @@ public class AllSongs extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word(getString(R.string.artist1music1), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist1music2), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist1music3), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist2music1), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist2music2), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist2music3), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist3music1), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist3music2), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
-        words.add(new Word(getString(R.string.artist3music3), R.drawable.ic_play_arrow_white_24dp, R.raw.light_and_darkness));
+        words.add(new Word(getString(R.string.artist1music1), R.drawable.ic_play_arrow_white_24dp, R.raw.johnhindemith_lightanddarkness));
+        words.add(new Word(getString(R.string.artist1music2), R.drawable.ic_play_arrow_white_24dp, R.raw.johnhindemith_enlightening));
 
         final WordAdapter itemsAdapter = new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.word_list);
