@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent goToHomeIntent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(goToHomeIntent);
+
             }
         });
-
     }
 }
 
