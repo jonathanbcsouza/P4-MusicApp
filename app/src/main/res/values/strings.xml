@@ -5,12 +5,17 @@
     <!-- Activity Informations -->
     <string name="header_home">
         Home - Here show for you the last three song that was played.
+        For the screen I used just TextViews to compose, and the selected menu is standard for others activities too.
+        The menu below was created using TextView using "android:drawableTop" to set images.
+        I connected them using intents inside the setOnClickListener method, the behavior is, when the user click, specified intent is called.
     </string>
     <string name="header_search">
         Search Screen - Here its useful to search some song that have inside your library ou phone.
+        I used TextView for compose the screen, and I used "android:drawableLeft" to set the image in the left side of the "SearchTextView"
     </string>
     <string name="header_library">
         Library Screen - Here is useful to choose what Artist, Album or song that you want to hear.
+        I used intents for called the specified activity.
     </string>
 
     <!-- Creating Headers-->
@@ -20,15 +25,20 @@
         UdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdacious
     </string>
     <string name="header_artist">
-        Artist Screen - this displays a list of songs based on the mood chosen in MainActivity
-        screen. This uses ListView and ArrayAdapter to display the list. When clicked on any list
-        item, MediaActivity (next screen) is launched to listen to the song.
+        Artist Screen - this displays a list of songs based on the chosen artist.
+        This uses ListView and ArrayAdapter to display the list.
+        When clicked on any list item, the method "setOnItemClickListener" is called and directs the user for artist chosen.
     </string>
     <string name="header_genre">
-    Genre Screen - Here is possible to choose which genre that you want.
+        Genre Screen - Here is possible to choose which genre that you want.
+        This uses ListView and ArrayAdapter to display the list.
+        When clicked on any list item, the method "setOnItemClickListener" is called and directs the user for genre chosen.
         </string>
     <string name="header_allSongs">
-        All Songs Screen - This view show the list with all songs available in your smartphone.
+        Songs Screen - This view show the list with all songs available in this option.
+        This uses ListView and ArrayAdapter to display the list.
+        I have difficult here because when I implemented the Header, when I touched him, I had problems with listView was touched.
+        I made this just set onItemClick method to the found position will be = "-1"
     </string>
     <string name="header_mediaPlayer">
         Media Player - This screen have all controls for you play, pause or stop songs.
@@ -77,5 +87,6 @@
     <string name="genre_alternative">Alternative</string>
     <string name="genre_electronic">Dance/Electronic</string>
     <string name="genre_rock">Rock</string>
+    <string name="search_here">Search here</string>
 
 </resources>

@@ -1,7 +1,7 @@
 package com.udacity.music;
 
 
-public class Word {
+public class Word extends Throwable {
 
     private String mMusicName;
     private int mAudioResourceId;

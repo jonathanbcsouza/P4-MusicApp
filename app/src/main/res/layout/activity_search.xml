@@ -1,9 +1,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
     android:orientation="vertical"
+    app:actionViewClass="android.support.v7.widget.SearchView"
+    app:showAsAction="collapseActionView|ifRoom"
     tools:context="com.udacity.music.MainActivity">
 
     <TextView
@@ -28,9 +31,12 @@
             android:layout_weight="0.27"
             android:background="@drawable/gradient"
             android:gravity="center"
-            android:hint="Search here"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:hint="@string/search_here"
             android:textColor="#FFF"
-            android:textColorHint="#7affffff" />
+            android:textColorHint="#7affffff"
+            android:imeOptions="actionSearch"
+            android:imeActionLabel="Search"/>
 
     </LinearLayout>
 

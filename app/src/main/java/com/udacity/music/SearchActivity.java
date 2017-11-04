@@ -20,7 +20,6 @@ public class SearchActivity extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener()
 
         {
-
             @Override
             public void onClick(View view) {
 
@@ -33,7 +32,6 @@ public class SearchActivity extends AppCompatActivity {
         library.setOnClickListener(new View.OnClickListener()
 
         {
-
             @Override
             public void onClick(View view) {
 
@@ -43,5 +41,4 @@ public class SearchActivity extends AppCompatActivity {
         });
 
     }
-
 }

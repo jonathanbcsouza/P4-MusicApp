@@ -1,27 +1,40 @@
 package com.udacity.music;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class AllSongs extends AppCompatActivity {
 
     private MediaPlayer mMediaPlayer;
 
+    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
+        @Override
+        public void onCompletion(MediaPlayer mp) {
+            releaseMediaPlayer();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
-        //Artist1
+
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word(getString(R.string.artist1) + "\n" + getString(R.string.artist1music1), R.drawable.ic_play_arrow_white_24dp, R.raw.johnhindemith_lightanddarkness));
-        words.add(new Word(getString(R.string.artist2) + "\n" + getString(R.string.artist1music2), R.drawable.ic_play_arrow_white_24dp, R.raw.johnhindemith_enlightening));
+        //Artist1
+        words.add(new Word(getString(R.string.artist1) + "\n" + getString(R.string.artist1music1), R.drawable.ic_play_arrow_white_24dp, R.raw.johnhindemith_enlightening));
+        words.add(new Word(getString(R.string.artist1) + "\n" + getString(R.string.artist1music2), R.drawable.ic_play_arrow_white_24dp, R.raw.johnhindemith_darknessandlight));
         //Artist2
         words.add(new Word(getString(R.string.artist2) + "\n" + getString(R.string.artist2music1), R.drawable.ic_play_arrow_white_24dp, R.raw.felguk_dead_man_wag));
         words.add(new Word(getString(R.string.artist2) + "\n" + getString(R.string.artist2music2), R.drawable.ic_play_arrow_white_24dp, R.raw.felguk_white_horse));
@@ -46,35 +59,73 @@ public class AllSongs extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.word_list);
         listView.setAdapter(itemsAdapter);
 
+        // Getting Model of Header from XML
+        ViewGroup headerView = (ViewGroup) getLayoutInflater().inflate(R.layout.instructions_header, listView, false);
+        TextView makeHeader = (TextView) headerView.findViewById(R.id.text_listview_header);
+        // Setting text on Header
+        makeHeader.setText(getString(R.string.header_allSongs));
+        // Add header view to the ListView
+        listView.addHeaderView(headerView);
+
+        // Set a click listener to play the audio when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, final int position, long l) {
 
-                //Found the position that was clicked
-                final Word word = words.get(position);
+                if (position == 0) {
+                } else {
+                    //Found the position that was clicked
+                    final Word word = words.get(position - 1);
 
-                //Config player to correct position choosed
-                mMediaPlayer = MediaPlayer.create(AllSongs.this, word.getAudioResourceId());
+                    // Call method for stop actually song before then other audio start
+                    releaseMediaPlayer();
 
-                //Start the song
-                mMediaPlayer.start();
+                    //Config player to correct position chosen
+                    mMediaPlayer = MediaPlayer.create(AllSongs.this, word.getAudioResourceId());
 
-                //Callback for action when the audio stopped
-                mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    public void onCompletion(MediaPlayer mp) {
+                    //Start the song clicked
+                    mMediaPlayer.start();
 
-                        Word songPosition = words.get(position);
+                    // Setup method from >>> Cleaning up MediaPlayer resources
+                    mMediaPlayer.setOnCompletionListener(mCompletionListener);
 
-                        // Change the color when the audio selected has finish ??? ERROR HERE, function will be finish for next update.
-                        // selectPosition = MediaPlayer.create(AllSongs.this, songPosition.getAudioResourceId());
-                        //selectPosition.setTextColor ????????
+                    //Callback for action when the audio stopped
+                    mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
 
-                        // Show a toast messagem when the audio selected has finish
-                        String figureOutMusicName = songPosition.getMusicName().toUpperCase();
-                        Toast.makeText(AllSongs.this, "The song " + figureOutMusicName + " is finished", Toast.LENGTH_SHORT).show();
-                    }
-                });
+                    {
+                        public void onCompletion(MediaPlayer mp) {
+
+                            Word songPosition = words.get(position - 1);
+
+                            // I wanted change the color when the audio selected has finish ??? ERROR HERE.
+                            // selectPosition = MediaPlayer.create(AllSongs.this, songPosition.getAudioResourceId());
+                            //selectPosition.setTextColor ????????
+
+                            // Show a toast message when the audio selected has finish
+                            String figureOutMusicName = songPosition.getMusicName().toUpperCase();
+                            Toast.makeText(AllSongs.this, "The song " + figureOutMusicName + " is finished", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
             }
         });
+    }
+
+    /**
+     * Clean up the media player by releasing its resources.
+     */
+
+    private void releaseMediaPlayer() {
+        // If the media player is not null, then it may be currently playing a sound.
+        if (mMediaPlayer != null) {
+            // Regardless of the current state of the media player, release its resources
+            // because we no longer need it.
+            mMediaPlayer.release();
+
+            // Set the media player back to null. For our code, we've decided that
+            // setting the media player to null is an easy way to tell that the media player
+            // is not configured to play an audio file at the moment.
+            mMediaPlayer = null;
+        }
     }
 }
