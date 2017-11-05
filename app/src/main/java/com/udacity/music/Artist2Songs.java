@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class Artist2Songs extends AppCompatActivity {
+public class Artist2Songs extends AllSongs {
 
     private MediaPlayer mMediaPlayer;
 

@@ -43,6 +43,19 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        //TESTE
+        TextView testeHeranca = (TextView) findViewById(R.id.headerHome);
+        testeHeranca.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick(View view) {
+
+                Intent goToLibrary = new Intent(HomeActivity.this, HerancaTeste.class);
+                startActivity(goToLibrary);
+            }
+        });
+
     }
 
 }

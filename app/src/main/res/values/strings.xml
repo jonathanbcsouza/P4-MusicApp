@@ -2,7 +2,23 @@
     <string name="app_name">Udacity Music</string>
     <string name="slogan">Listen Music Now!</string>
 
-    <!-- Activity Informations -->
+    <!-- Home Screen -->
+    <string name="screen_home">Home</string>
+    <string name="last_songs1">Last song played 1</string>
+    <string name="last_songs2">Last song played 2</string>
+    <string name="last_songs3">Last song played 3</string>
+
+    <!-- Saerch Screen -->
+    <string name="screen_search">Search Songs</string>
+    <string name="search_here">Search here</string>
+
+    <!-- Library -->
+    <string name="screen_library">Library</string>
+    <string name="library_artists">Artists</string>
+    <string name="library_genre">Genre</string>
+    <string name="library_all_songs">All Songs</string>
+
+    <!-- Creating Headers Main Activities-->
     <string name="header_home">
         Home - Here show for you the last three song that was played.
         For the screen I used just TextViews to compose, and the selected menu is standard for others activities too.
@@ -18,7 +34,7 @@
         I used intents for called the specified activity.
     </string>
 
-    <!-- Creating Headers-->
+    <!-- Creating Headers Inflated-->
     <string name="text_setSize_header">
         UdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdacious
         UdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdacious
@@ -44,18 +60,21 @@
         Media Player - This screen have all controls for you play, pause or stop songs.
     </string>
 
-    <!-- Home Screen Navigation Bar -->
-    <string name="screen_home">Home</string>
-    <string name="screen_library">Library</string>
-    <string name="screen_search">Search Songs</string>
-    <string name="last_songs1">Last song played 1</string>
-    <string name="last_songs2">Last song played 2</string>
-    <string name="last_songs3">Last song played 3</string>
 
-    <!-- Library Navigation Bar -->
-    <string name="library_artists">Artists</string>
-    <string name="library_genre">Genre</string>
-    <string name="library_all_songs">All Songs</string>
+
+    <!-- Music Player -->
+    <string name="back"><![CDATA[<]]></string>
+    <string name="rewind"><![CDATA[<<]]></string>
+    <string name="forward"><![CDATA[>>]]></string>
+    <string name="play"><![CDATA[>]]></string>
+    <string name="pause">||</string>
+    <string name="title_activity_now_playing">now_playing</string>
+    <string name="toast_pausing">Pausing sound</string>
+    <string name="toast_backward">Backward 5 seconds</string>
+    <string name="toast_forward">Forward 5 seconds</string>
+    <string name="toast_playing">Playing sound</string>
+    <string name="rewindRestart">Sound restarted</string>
+    <string name="forwardFinish">The song will be end</string>
 
     <!-- Artists names and they songs -->
     <string name="artist1">John Hindemith</string>
@@ -87,6 +106,6 @@
     <string name="genre_alternative">Alternative</string>
     <string name="genre_electronic">Dance/Electronic</string>
     <string name="genre_rock">Rock</string>
-    <string name="search_here">Search here</string>
+
 
 </resources>

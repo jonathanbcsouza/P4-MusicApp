@@ -6,5 +6,7 @@
 
     <!-- Color of logo from website Udacity-->
     <color name="colorUdacityLogo">#02b2e3</color>
+
+    <!-- Newt update will be implemented after the song stopped-->
     <color name="corAfterSongStop">#557799</color>
 </resources>

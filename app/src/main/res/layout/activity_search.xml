@@ -30,13 +30,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.27"
             android:background="@drawable/gradient"
-            android:gravity="center"
             android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:gravity="center"
             android:hint="@string/search_here"
-            android:textColor="#FFF"
-            android:textColorHint="#7affffff"
+            android:imeActionLabel="Search"
             android:imeOptions="actionSearch"
-            android:imeActionLabel="Search"/>
+            android:textColor="#FFF"
+            android:textColorHint="#7affffff" />
 
     </LinearLayout>
 

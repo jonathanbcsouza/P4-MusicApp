@@ -13,4 +13,6 @@
         android:text="@string/text_setSize_header"
         android:textColor="@color/colorUdacityLogo" />
 
+
+
 </LinearLayout>

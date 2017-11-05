@@ -43,6 +43,10 @@ public class Artist1Songs extends AppCompatActivity {
         makeHeader.setText(getString(R.string.header_allSongs));
         listView.addHeaderView(headerView);
 
+        // Getting Music Player Layout
+        ViewGroup musicPlayerView = (ViewGroup) getLayoutInflater().inflate(R.layout.activity_now_playing, listView, false);
+        listView.addFooterView(musicPlayerView);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, final int position, long l) {

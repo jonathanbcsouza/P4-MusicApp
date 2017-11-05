@@ -43,7 +43,12 @@
         <activity
             android:name=".AllSongs"
             android:label="@string/library_all_songs" />
-
+        <activity
+            android:name=".NowPlaying"
+            android:label="@string/title_activity_now_playing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TesteHeranca" />
+        <activity android:name=".HerancaTeste"></activity>
     </application>
 
 </manifest>
