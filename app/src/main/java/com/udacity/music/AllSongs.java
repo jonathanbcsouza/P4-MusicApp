@@ -15,9 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-
 import java.util.ArrayList;
-
 import static com.udacity.music.R.drawable.gif_nerd_dancing_storm;
 
 public class AllSongs extends AppCompatActivity {
