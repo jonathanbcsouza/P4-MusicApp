@@ -16,12 +16,10 @@ public class Word extends Throwable {
      */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
-
     public Word(String musicName, int imageResourceId) {
         mMusicName = musicName;
         mImageResourceId = imageResourceId;
     }
-
 
     public Word(String musicName, int imageResourceId, int audioResourceId) {
         mMusicName = musicName;

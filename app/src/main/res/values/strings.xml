@@ -3,7 +3,7 @@
     <string name="slogan">Listen Music Now!</string>
 
     <!-- Home Screen -->
-    <string name="screen_home">Home</string>
+    <string name="screen_home" translatable="false">Home</string>
     <string name="last_songs1">Last song played 1</string>
     <string name="last_songs2">Last song played 2</string>
     <string name="last_songs3">Last song played 3</string>
@@ -25,49 +25,46 @@
         The menu below was created using TextView using "android:drawableTop" to set images.
         I connected them using intents inside the setOnClickListener method, the behavior is, when the user click, specified intent is called.
     </string>
+
     <string name="header_search">
         Search Screen - Here its useful to search some song that have inside your library ou phone.
         I used TextView for compose the screen, and I used "android:drawableLeft" to set the image in the left side of the "SearchTextView"
     </string>
-    <string name="header_library">
-        Library Screen - Here is useful to choose what Artist, Album or song that you want to hear.
-        I used intents for called the specified activity.
-    </string>
+
+    <string name="header_library">"\n        Library Screen - Here is useful to choose the Artist, Album or song that you want to hear.\n        I used intents for called the specified activity.\n    "</string>
 
     <!-- Creating Headers Inflated-->
-    <string name="text_setSize_header">
-        UdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdacious
-        UdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdacious
+    <string name="text_setSize_header" translatable="false">
         UdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdaciousUdacious
     </string>
+
     <string name="header_artist">
         Artist Screen - this displays a list of songs based on the chosen artist.
         This uses ListView and ArrayAdapter to display the list.
         When clicked on any list item, the method "setOnItemClickListener" is called and directs the user for artist chosen.
     </string>
+
     <string name="header_genre">
         Genre Screen - Here is possible to choose which genre that you want.
         This uses ListView and ArrayAdapter to display the list.
         When clicked on any list item, the method "setOnItemClickListener" is called and directs the user for genre chosen.
-        </string>
-    <string name="header_allSongs">
-        Songs Screen - This view show the list with all songs available in this option.
-        This uses ListView and ArrayAdapter to display the list.
-        I have difficult here because when I implemented the Header, when I touched him, I had problems with listView was touched.
-        I made this just set onItemClick method to the found position will be = "-1"
     </string>
+
+    <string name="header_allSongs">
+        Songs Screen - This view show the list with all songs available for the option chosen.
+        This uses ListView and ArrayAdapter to display the list of songs.
+    </string>
+
     <string name="header_mediaPlayer">
         Media Player - This screen have all controls for you play, pause or stop songs.
     </string>
 
-
-
     <!-- Music Player -->
-    <string name="back"><![CDATA[<]]></string>
+    <string name="back" translatable="false"><![CDATA[<]]></string>
     <string name="rewind"><![CDATA[<<]]></string>
-    <string name="forward"><![CDATA[>>]]></string>
-    <string name="play"><![CDATA[>]]></string>
-    <string name="pause">||</string>
+    <string name="forward" translatable="false"><![CDATA[>>]]></string>
+    <string name="play" translatable="false"><![CDATA[>]]></string>
+    <string name="pause" translatable="false">||</string>
     <string name="title_activity_now_playing">now_playing</string>
     <string name="toast_pausing">Pausing sound</string>
     <string name="toast_backward">Backward 5 seconds</string>
@@ -77,35 +74,34 @@
     <string name="forwardFinish">The song will be end</string>
 
     <!-- Artists names and they songs -->
-    <string name="artist1">John Hindemith</string>
-    <string name="artist1music1">Enlightening</string>
-    <string name="artist1music2">Darkness and Light</string>
+    <string name="artist1" translatable="false">John Hindemith</string>
+    <string name="artist1music1" translatable="false">Enlightening</string>
+    <string name="artist1music2" translatable="false">Darkness and Light</string>
 
-    <string name="artist2">Felguk</string>
-    <string name="artist2music1">Dead Man Swag</string>
-    <string name="artist2music2">White Horse</string>
-    <string name="artist2music3">Hands Up For Detroit</string>
+    <string name="artist2" translatable="false">Felguk</string>
+    <string name="artist2music1" translatable="false">Dead Man Swag</string>
+    <string name="artist2music2" translatable="false">White Horse</string>
+    <string name="artist2music3" translatable="false">Hands Up For Detroit</string>
 
-    <string name="artist3">AudioSlave</string>
-    <string name="artist3music1">Cochise</string>
-    <string name="artist3music2">Show Me How To Live</string>
-    <string name="artist3music3">Gasoline</string>
-    <string name="artist3music4">What You Are</string>
-    <string name="artist3music5">Like A Stone</string>
-    <string name="artist3music6">Set It Off</string>
-    <string name="artist3music7">Shadow On The Sun</string>
-    <string name="artist3music8">I Am The Highway</string>
-    <string name="artist3music9">Exploder</string>
-    <string name="artist3music10">Hypnotize</string>
-    <string name="artist3music11">Bring Back</string>
-    <string name="artist3music12">Light My Way</string>
-    <string name="artist3music13">A Getaway Car</string>
-    <string name="artist3music14">The Last Remaining Light</string>
+    <string name="artist3" translatable="false">AudioSlave</string>
+    <string name="artist3music1" translatable="false">Cochise</string>
+    <string name="artist3music2" translatable="false">Show Me How To Live</string>
+    <string name="artist3music3" translatable="false">Gasoline</string>
+    <string name="artist3music4" translatable="false">What You Are</string>
+    <string name="artist3music5" translatable="false">Like A Stone</string>
+    <string name="artist3music6" translatable="false">Set It Off</string>
+    <string name="artist3music7" translatable="false">Shadow On The Sun</string>
+    <string name="artist3music8" translatable="false">I Am The Highway</string>
+    <string name="artist3music9" translatable="false">Exploder</string>
+    <string name="artist3music10" translatable="false">Hypnotize</string>
+    <string name="artist3music11" translatable="false">Bring Back</string>
+    <string name="artist3music12" translatable="false">Light My Way</string>
+    <string name="artist3music13" translatable="false">A Getaway Car</string>
+    <string name="artist3music14" translatable="false">The Last Remaining Light</string>
 
     <!-- Genres -->
     <string name="genre_alternative">Alternative</string>
     <string name="genre_electronic">Dance/Electronic</string>
-    <string name="genre_rock">Rock</string>
-
+    <string name="genre_rock" translatable="false">Rock</string>
 
 </resources>

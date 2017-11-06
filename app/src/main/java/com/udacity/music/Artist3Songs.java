@@ -50,7 +50,7 @@ public class Artist3Songs extends AppCompatActivity {
 
         // Getting Model of Header from XML
         ViewGroup headerView = (ViewGroup) getLayoutInflater().inflate(R.layout.instructions_header, listView, false);
-        TextView makeHeader = (TextView) headerView.findViewById(R.id.text_listview_header);
+        TextView makeHeader = (TextView) headerView.findViewById(R.id.text_listView_header);
         makeHeader.setText(getString(R.string.header_allSongs));
         listView.addHeaderView(headerView);
 

@@ -29,7 +29,7 @@ public class ArtistActivity extends AppCompatActivity implements AdapterView.OnI
 
         // Getting Model of Header from XML
         ViewGroup headerView = (ViewGroup) getLayoutInflater().inflate(R.layout.instructions_header, listView, false);
-        TextView makeHeader = (TextView) headerView.findViewById(R.id.text_listview_header);
+        TextView makeHeader = (TextView) headerView.findViewById(R.id.text_listView_header);
         // Setting text on Header
         makeHeader.setText(getString(R.string.header_artist));
         // Add header view to the ListView

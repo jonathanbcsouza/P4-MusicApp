@@ -47,8 +47,7 @@
             android:name=".NowPlaying"
             android:label="@string/title_activity_now_playing"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TesteHeranca" />
-        <activity android:name=".HerancaTeste"></activity>
+        <activity android:name=".PlayingScreen"></activity>
     </application>
 
 </manifest>

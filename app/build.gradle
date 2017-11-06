@@ -7,7 +7,7 @@ android {
         applicationId "com.udacity.music"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 10
+        versionCode 50584124844568688648 //hahah
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -31,4 +31,8 @@ dependencies {
     compile 'com.android.support:support-vector-drawable:25.3.1'
     compile 'com.android.support:support-v4:25.3.1'
     testCompile 'junit:junit:4.12'
+
+    // Import libs for gif animation
+    compile 'com.github.bumptech.glide:glide:3.5.2'
+
 }

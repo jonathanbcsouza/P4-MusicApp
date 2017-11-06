@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class Artist2Songs extends AllSongs {
+public class Artist2Songs extends AppCompatActivity {
 
     private MediaPlayer mMediaPlayer;
 
@@ -30,7 +30,6 @@ public class Artist2Songs extends AllSongs {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-
         final ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word(getString(R.string.artist2music1), R.drawable.ic_play_arrow_white_24dp, R.raw.felguk_dead_man_wag));
         words.add(new Word(getString(R.string.artist2music2), R.drawable.ic_play_arrow_white_24dp, R.raw.felguk_white_horse));
@@ -42,14 +41,13 @@ public class Artist2Songs extends AllSongs {
 
         // Getting Model of Header from XML
         ViewGroup headerView = (ViewGroup) getLayoutInflater().inflate(R.layout.instructions_header, listView, false);
-        TextView makeHeader = (TextView) headerView.findViewById(R.id.text_listview_header);
+        TextView makeHeader = (TextView) headerView.findViewById(R.id.text_listView_header);
         makeHeader.setText(getString(R.string.header_allSongs));
         listView.addHeaderView(headerView);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, final int position, long l) {
-
                 if (position == 0) {
                 } else {
 

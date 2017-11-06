@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Udacity Music</string>
+    <string name="forwardFinish">O som vai terminar</string>
+    <string name="genre_alternative">Alternativo</string>
+    <string name="genre_electronic">Eletrônica</string>
+    <string name="last_songs1">Ultimo som tocado</string>
+    <string name="last_songs2">Penultimo som tocado</string>
+    <string name="last_songs3">Antepenultimo som tocado</string>
+    <string name="library_all_songs">Todas as músicas</string>
+    <string name="library_artists">Artistas</string>
+    <string name="library_genre">Gênero</string>
+    <string name="rewind">Voltar</string>
+    <string name="rewindRestart">Música reiniciada</string>
+    <string name="screen_library">Biblioteca</string>
+    <string name="screen_search">Buscar músicas</string>
+    <string name="search_here">Procure aqui</string>
+    <string name="slogan">Ouça suas músicas agora!</string>
+    <string name="title_activity_now_playing">Tocando</string>
+    <string name="toast_backward">Voltar 5 segundos</string>
+    <string name="toast_forward">Avançar 5 segundos</string>
+    <string name="toast_pausing">Pausando</string>
+    <string name="toast_playing">Tocando</string>
+    <string name="header_allSongs">Tela de músicas - Esta exibição mostra a lista com todas as músicas disponíveis para a opção escolhida. Utilizado ListView e ArrayAdapter para exibir a lista de músicas.</string>
+    <string name="header_artist">Tela Artista - isso exibe uma lista de músicas com base no artista escolhido. Utiliza uma ListView e um ArrayAdapter para exibir a lista. Quando clicado em qualquer item da lista, o método \"setOnItemClickListener\" é chamado e direciona o usuário para o artista escolhido.</string>
+    <string name="header_genre">Tela de gênero - Aqui é possível escolher qual gênero você deseja. Isso usa ListView e ArrayAdapter para exibir a lista. Quando clicado em qualquer item da lista, o método \"setOnItemClickListener\" é chamado e direciona o usuário para o gênero escolhido.</string>
+    <string name="header_home">Home - Aqui mostra para você a última canção que foi tocada. Para a tela, eu usei apenas TextViews para compor, e o menu selecionado é padrão para outras atividades também. O menu abaixo foi criado usando TextView usando \"android: drawableTop\" para definir imagens. Eu os liguei usando \"intenções\" dentro do método setOnClickListener, o comportamento é, quando o usuário clicar, a intenção especificada é chamada.</string>
+    <string name="header_library">Tela da Biblioteca - Aqui é útil escolher o Artista, o Álbum ou a música que deseja ouvir. Eu usei \"intents\" para chamar a atividade especificada.</string>
+    <string name="header_mediaPlayer">Media Player - Esta tela possui todos os controles para você reproduzir, pausar ou interromper músicas.</string>
+    <string name="header_search">Tela de pesquisa - Aqui é útil pesquisar alguma música que tenha dentro de sua biblioteca ou telefone. Eu usei TextView para compor a tela e usei \"android: drawableLeft\" para definir a imagem no lado esquerdo do \"SearchTextView\"</string>
+</resources>
