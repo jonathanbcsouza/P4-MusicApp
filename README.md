@@ -3,7 +3,7 @@ My Music App
 
 <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/home_screen.png" width="200" align="right" hspace="20">
 
-*Created as part of Udacity's Android Basics by Google Nanodegree Program*
+*Created as part of [Udacity's](http://udacity.com) Android Basics by Google Nanodegree Program*
 
 This is my personal music player
 
@@ -15,5 +15,4 @@ Features
 - A funny music player :sweat_smile:
 - List of songs :headphones:
 
-### More information about courses:
-**[Udacity website](http://udacity.com)**
+This example I used Arraylist, RecicleView, ClickListeners and others.
