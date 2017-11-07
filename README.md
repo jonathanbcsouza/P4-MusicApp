@@ -16,7 +16,7 @@ Features
 - A funny music player :sweat_smile:
 - List of songs :headphones:
 
-This example I used: Arraylist, RecicleView, ClickListeners and others.
+This example I used:
 
 - 8 Xml files
 - 19 Songs
