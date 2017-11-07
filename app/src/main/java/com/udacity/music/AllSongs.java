@@ -15,7 +15,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
+
 import static com.udacity.music.R.drawable.gif_nerd_dancing_storm;
 
 public class AllSongs extends AppCompatActivity {
@@ -236,6 +238,14 @@ public class AllSongs extends AppCompatActivity {
             // setting the media player to null is an easy way to tell that the media player
             // is not configured to play an audio file at the moment.
             mMediaPlayer = null;
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (mMediaPlayer != null) {
+            mMediaPlayer.pause();
         }
     }
 }

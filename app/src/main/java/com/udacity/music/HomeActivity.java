@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class HomeActivity extends AppCompatActivity {
 
 
@@ -17,7 +19,6 @@ public class HomeActivity extends AppCompatActivity {
         TextView jonathanHeaders = (TextView) findViewById(R.id.headerHome);
         jonathanHeaders.setText(R.string.header_home);
 
-        // Go to Search screen
         TextView syncSearch = (TextView) findViewById(R.id.searchXml);
         syncSearch.setOnClickListener(new View.OnClickListener() {
 
@@ -29,7 +30,6 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        // Go to library screen
         TextView syncLibrary = (TextView) findViewById(R.id.libraryXml);
         syncLibrary.setOnClickListener(new View.OnClickListener()
 

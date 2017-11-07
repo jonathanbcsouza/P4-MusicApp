@@ -29,20 +29,16 @@ public class Genre extends AppCompatActivity implements AdapterView.OnItemClickL
 
         ListView listView = (ListView) findViewById(R.id.word_list);
 
-        // Getting Model of Header from XML
         ViewGroup headerView = (ViewGroup) getLayoutInflater().inflate(R.layout.instructions_header, listView, false);
         TextView makeHeader = (TextView) headerView.findViewById(R.id.text_listView_header);
-        // Setting text on Header
+
         makeHeader.setText(getString(R.string.header_genre));
-        // Add header view to the ListView
+
         listView.addHeaderView(headerView);
 
-        // Create PlayListAdapter object to display list view
         WordAdapter itemsAdapter = new WordAdapter(this, genre);
         listView.setAdapter(itemsAdapter);
 
-        // Set OnClickListener on ListView to identify the item on ListView clicked by user
-        // Text on the ListView item clicked is passed on to PlaylistActivity
         listView.setOnItemClickListener(this);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
