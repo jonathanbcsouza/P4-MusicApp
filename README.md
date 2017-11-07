@@ -1,7 +1,8 @@
 My Music App
 =================================
 
-<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/home_screen.png" width="200" align="right" hspace="20">
+<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/home_screen.png" width="300" align="right" hspace="20">
+
 
 *Created as part of [Udacity's](http://udacity.com) Android Basics by Google Nanodegree Program*
 
@@ -15,4 +16,16 @@ Features
 - A funny music player :sweat_smile:
 - List of songs :headphones:
 
-This example I used Arraylist, RecicleView, ClickListeners and others.
+This example I used: Arraylist, RecicleView, ClickListeners and others.
+
+- 8 Xml files
+- 19 Songs
+- 13 Java classes
+- Intents
+- ClickListeners
+- Arraylists
+- RecicleViews
+
+**More information**
+
+The class [AllSongs.java](https://github.com/jonathanbcsouza/mymusicapp/blob/master/app/src/main/java/com/udacity/music/AllSongs.java) has comments for all syntax.
