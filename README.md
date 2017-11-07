@@ -1,4 +1,4 @@
-My Music App
+My Music App <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/app/src/main/ic_launcher-web.png" width="50"  align="center" >
 =================================
 
 <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/home_screen.png" width="300" align="right" hspace="20">
@@ -29,3 +29,4 @@ This example I used:
 **More information**
 
 The class [AllSongs.java](https://github.com/jonathanbcsouza/mymusicapp/blob/master/app/src/main/java/com/udacity/music/AllSongs.java) has comments to help students, because it applies to all other classes.
+
