@@ -5,7 +5,9 @@ My Music App
 
 *Created as part of Udacity's Android Basics by Google Nanodegree Program*
 
-Simple music player contains a list of songs defined by app.
+This is my personal music player
+
+Contains a list of songs defined by app.
 
 Features
 
@@ -13,5 +15,5 @@ Features
 - A funny music player :sweat_smile:
 - List of songs :headphones:
 
-### More information:
+### More information about courses:
 **[Udacity website](http://udacity.com)**
