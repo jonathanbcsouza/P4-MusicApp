@@ -1,7 +1,7 @@
 My Music App
 =================================
 
-<img src="https://www.dropbox.com/preview/Screenshot_20171107-104127.png" width="400" align="right" hspace="20">
+<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/home_screen.png" width="200" align="left" hspace="20">
 
 *Created as part of Udacity's Android Basics by Google Nanodegree Program*
 
@@ -10,13 +10,14 @@ Contains a list of songs defined by app.
 
 Features
 
-- 3 Screens : `iphone` :capital_abcd: `Search` :mag_right: & `Library` :books:
-- A funny music player :geek:
+- 3 Screens : `Home` :iphone: `Search` :mag_right: & `Library` :books:
+- A funny music player :sweat_smile:
 - List of songs :headphones:
 
 ### Download:
 
 <a href="https://udacity.com" target="_blank">
-<img src="http://img.app-liv.jp.s3.amazonaws.com/icon/001649427/6307103704598d0e973ac5c6c5c6be8a.png" alt="Udacity Informations" height="90"/></a>
+<img src="https://lh3.googleusercontent.com/UvVEg8VLF9qJ4KjvCcpNP5ev4XPh6W_o8PMkfj4COm9MDxozDmlWpW78XW_pZC5N0m7d=w300" alt="Udacity website:" height="90"/></a>
 
-=================================
+
+=================================================
