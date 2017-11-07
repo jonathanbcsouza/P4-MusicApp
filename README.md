@@ -14,10 +14,8 @@ Features
 - A funny music player :sweat_smile:
 - List of songs :headphones:
 
-### Download:
+### More information:
 
 <a href="https://udacity.com" target="_blank">
-<img src="https://lh3.googleusercontent.com/UvVEg8VLF9qJ4KjvCcpNP5ev4XPh6W_o8PMkfj4COm9MDxozDmlWpW78XW_pZC5N0m7d=w300" alt="Udacity website:" height="90"/></a>
-
 
 =================================================
