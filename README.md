@@ -28,4 +28,4 @@ This example I used: Arraylist, RecicleView, ClickListeners and others.
 
 **More information**
 
-The class [AllSongs.java](https://github.com/jonathanbcsouza/mymusicapp/blob/master/app/src/main/java/com/udacity/music/AllSongs.java) has comments for all syntax.
+The class [AllSongs.java](https://github.com/jonathanbcsouza/mymusicapp/blob/master/app/src/main/java/com/udacity/music/AllSongs.java) has comments to help students, because it applies to all other classes.
