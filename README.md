@@ -15,5 +15,3 @@ Features
 
 ### More information:
 **[Udacity website](http://udacity.com)**
-
-==============================================================================
