@@ -29,26 +29,15 @@
             android:name=".ArtistActivity"
             android:label="@string/library_artists" />
         <activity
-            android:name=".Artist1Songs"
-            android:label="@string/artist1" />
-        <activity
-            android:name=".Artist2Songs"
-            android:label="@string/artist2" />
-        <activity
-            android:name=".Artist3Songs"
-            android:label="@string/artist3" />
-        <activity
             android:name=".Genre"
             android:label="@string/library_genre" />
-        <activity
-            android:name=".AllSongs"
-            android:label="@string/library_all_songs" />
         <activity
             android:name=".NowPlaying"
             android:label="@string/title_activity_now_playing"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".PlayingScreen" />
-        <activity android:name=".P4_ReportCard"></activity>
+        <activity android:name=".P4_ReportCard" />
+        <activity android:name=".Donations"></activity>
     </application>
 
 </manifest>

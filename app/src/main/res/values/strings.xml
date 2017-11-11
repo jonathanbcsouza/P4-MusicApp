@@ -8,7 +8,7 @@
     <string name="last_songs2">Last song played 2</string>
     <string name="last_songs3">Last song played 3</string>
 
-    <!-- Saerch Screen -->
+    <!-- Search Screen -->
     <string name="screen_search">Search Songs</string>
     <string name="search_here">Search here</string>
 
@@ -17,6 +17,11 @@
     <string name="library_artists">Artists</string>
     <string name="library_genre">Genre</string>
     <string name="library_all_songs">All Songs</string>
+
+    <!-- Donations -->
+    <string name="donations_library">Donate</string>
+    <string name="donations_helpUs">Help us improve this app</string>
+
 
     <!-- Creating Headers Main Activities-->
     <string name="header_home">
@@ -32,6 +37,12 @@
     </string>
 
     <string name="header_library">"\n        Library Screen - Here is useful to choose the Artist, Album or song that you want to hear.\n        I used intents for called the specified activity.\n    "</string>
+
+    <string name="header_donate">
+        Donate Screen - Here you can help us to keep improves in our app.
+        I used TextView for compose the screen.
+    </string>
+
 
     <!-- Creating Headers Inflated-->
     <string name="text_setSize_header" translatable="false">

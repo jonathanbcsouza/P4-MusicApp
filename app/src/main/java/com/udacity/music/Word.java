@@ -1,7 +1,10 @@
 package com.udacity.music;
 
 
-public class Word extends Throwable {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Word extends Throwable implements Parcelable {
 
     private String mMusicName;
     private int mAudioResourceId;
@@ -28,10 +31,12 @@ public class Word extends Throwable {
     }
 
     public String getMusicName() {
+
         return mMusicName;
     }
 
     public int getAudioResourceId() {
+
         return mAudioResourceId;
     }
 
@@ -39,6 +44,7 @@ public class Word extends Throwable {
      * Return the image resource ID of the word.
      */
     public int getImageResourceId() {
+
         return mImageResourceId;
     }
 
@@ -46,6 +52,41 @@ public class Word extends Throwable {
      * Returns whether or not there is an image for this word.
      */
     public boolean hasImage() {
+
         return mImageResourceId != NO_IMAGE_PROVIDED;
+    }
+
+    /*
+     * Parcelable particular
+     */
+
+    public static final String PARCELABLE_KEY = "word";
+
+    public static final Parcelable.Creator<Word> CREATOR = new Parcelable.Creator<Word>() {
+        public Word createFromParcel(Parcel in) {
+            return new Word(in);
+        }
+
+        public Word[] newArray(int size) {
+            return new Word[size];
+        }
+    };
+
+    private Word(Parcel in) {
+        mMusicName = in.readString();
+        mAudioResourceId  = in.readInt();
+        mImageResourceId = in.readInt();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(mMusicName);
+        dest.writeInt(mAudioResourceId);
+        dest.writeInt(mImageResourceId);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
     }
 }

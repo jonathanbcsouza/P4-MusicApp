@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 public class HomeActivity extends AppCompatActivity {
 
 
@@ -16,10 +14,10 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        TextView jonathanHeaders = (TextView) findViewById(R.id.headerHome);
-        jonathanHeaders.setText(R.string.header_home);
+        TextView headerHome = (TextView) findViewById(R.id.headerHome);
+        headerHome.setText(R.string.header_home);
 
-        TextView syncSearch = (TextView) findViewById(R.id.searchXml);
+        TextView syncSearch = (TextView) findViewById(R.id.searchXmlFromHome);
         syncSearch.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -30,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        TextView syncLibrary = (TextView) findViewById(R.id.libraryXml);
+        TextView syncLibrary = (TextView) findViewById(R.id.libraryXmlFromHome);
         syncLibrary.setOnClickListener(new View.OnClickListener()
 
         {
@@ -39,6 +37,19 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent goToLibraryIntent = new Intent(HomeActivity.this, LibraryActivity.class);
+                startActivity(goToLibraryIntent);
+            }
+        });
+
+        TextView syncDonate = (TextView) findViewById(R.id.paymentXmlFromHome);
+        syncDonate.setOnClickListener(new View.OnClickListener()
+
+        {
+
+            @Override
+            public void onClick(View view) {
+
+                Intent goToLibraryIntent = new Intent(HomeActivity.this, Donations.class);
                 startActivity(goToLibraryIntent);
             }
         });

@@ -52,22 +52,28 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/homeXml"
+            android:id="@+id/homeXmlFromHome"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_home_black_24dp"
             android:text="@string/screen_home" />
 
         <TextView
-            android:id="@+id/searchXml"
+            android:id="@+id/searchXmlFromHome"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_search_black_24dp"
             android:text="@string/screen_search" />
 
         <TextView
-            android:id="@+id/libraryXml"
+            android:id="@+id/libraryXmlFromHome"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_library_music_black_24dp"
             android:text="@string/screen_library" />
+
+        <TextView
+            android:id="@+id/paymentXmlFromHome"
+            style="@style/NavigationStyle"
+            android:drawableTop="@drawable/ic_credit_card_black_24dp"
+            android:text="@string/donations_library" />
 
     </LinearLayout>
 

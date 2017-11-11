@@ -4,75 +4,64 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
     android:orientation="vertical"
-    tools:context="com.udacity.music.LibraryActivity">
+    tools:context="com.udacity.music.HomeActivity">
 
     <TextView
-        android:id="@+id/headerLibrary"
+        android:id="@+id/headerDonations"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:textColor="@color/colorUdacityLogo" />
 
     <LinearLayout
+        android:id="@+id/navigationBar1"
         style="@style/NavigationStyle"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/artistXmlFromLibrary"
-            style="@style/TextWithoutBackground"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/library_artists" />
-
-        <TextView
-            android:id="@+id/genreXmlFromLibrary"
-            style="@style/TextWithoutBackground"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/library_genre" />
-
-        <TextView
-            android:id="@+id/allSongXmlFromLibrary"
-            style="@style/TextWithoutBackground"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/library_all_songs" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/navigationBarlibrary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/gradient"
-        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/donateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:text="@string/donations_helpUs"
+            android:textColor="@color/colorUdacityLogo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationBarLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/homeXmlFromLibrary"
+            android:id="@+id/homeXmlFromDonations"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_home_black_24dp"
             android:text="@string/screen_home" />
 
         <TextView
-            android:id="@+id/searchXmlFromLibrary"
+            android:id="@+id/searchXmlFromDonations"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_search_black_24dp"
             android:text="@string/screen_search" />
 
         <TextView
-            android:id="@+id/libraryXmlFromLibrary"
+            android:id="@+id/libraryXmlFromDonations"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_library_music_black_24dp"
             android:text="@string/screen_library" />
 
         <TextView
-            android:id="@+id/paymentXmlFromLibrary"
+            android:id="@+id/paymentXmlFromDonations"
             style="@style/NavigationStyle"
             android:drawableTop="@drawable/ic_credit_card_black_24dp"
             android:text="@string/donations_library" />
 
     </LinearLayout>
+
 </LinearLayout>

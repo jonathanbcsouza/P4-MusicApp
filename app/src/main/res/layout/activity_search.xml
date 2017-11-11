@@ -65,6 +65,12 @@
             android:drawableTop="@drawable/ic_library_music_black_24dp"
             android:text="@string/screen_library" />
 
+        <TextView
+            android:id="@+id/paymentXmlFromSearch"
+            style="@style/NavigationStyle"
+            android:drawableTop="@drawable/ic_credit_card_black_24dp"
+            android:text="@string/donations_library" />
+
     </LinearLayout>
 
 </LinearLayout>

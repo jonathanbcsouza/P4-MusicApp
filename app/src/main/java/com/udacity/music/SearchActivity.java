@@ -13,8 +13,8 @@ public class SearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-        TextView jonathanHeaders = (TextView) findViewById(R.id.headerSearch);
-        jonathanHeaders.setText(R.string.header_search);
+        TextView searchHeader = (TextView) findViewById(R.id.headerSearch);
+        searchHeader.setText(R.string.header_search);
 
         TextView search = (TextView) findViewById(R.id.homeXmlFromSearch);
         search.setOnClickListener(new View.OnClickListener()
@@ -37,6 +37,19 @@ public class SearchActivity extends AppCompatActivity {
 
                 Intent goToLibrary = new Intent(SearchActivity.this, LibraryActivity.class);
                 startActivity(goToLibrary);
+            }
+        });
+
+        TextView syncDonate = (TextView) findViewById(R.id.paymentXmlFromSearch);
+        syncDonate.setOnClickListener(new View.OnClickListener()
+
+        {
+
+            @Override
+            public void onClick(View view) {
+
+                Intent goToLibraryIntent = new Intent(SearchActivity.this, Donations.class);
+                startActivity(goToLibraryIntent);
             }
         });
     }
