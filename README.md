@@ -18,14 +18,17 @@ Features
 
 This example I used:
 
-- 8 Xml files
+- 11 Java classes
+- 10 Xml files
 - 19 Songs
-- 13 Java classes
 - Intents
 - ClickListeners
 - Arraylists
 - RecicleViews
+- WebView for payments by PayPal.
+-
+
 
 **More information**
 
-The class [AllSongs.java](https://github.com/jonathanbcsouza/mymusicapp/blob/master/app/src/main/java/com/udacity/music/AllSongs.java) has comments to help students, because it applies to all other classes.
+The class have comments for help students understand.

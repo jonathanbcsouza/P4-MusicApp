@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.udacity.music">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -31,13 +33,9 @@
         <activity
             android:name=".Genre"
             android:label="@string/library_genre" />
-        <activity
-            android:name=".NowPlaying"
-            android:label="@string/title_activity_now_playing"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".PlayingScreen" />
-        <activity android:name=".P4_ReportCard" />
-        <activity android:name=".Donations"></activity>
+        <activity android:name=".Donations" />
+        <activity android:name=".PayPal"></activity>
     </application>
 
 </manifest>

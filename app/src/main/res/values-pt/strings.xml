@@ -27,4 +27,10 @@
     <string name="header_library">Tela da Biblioteca - Aqui é útil escolher o Artista, o Álbum ou a música que deseja ouvir. Eu usei \"intents\" para chamar a atividade especificada.</string>
     <string name="header_mediaPlayer">Media Player - Esta tela possui todos os controles para você reproduzir, pausar ou interromper músicas.</string>
     <string name="header_search">Tela de pesquisa - Aqui é útil pesquisar alguma música que tenha dentro de sua biblioteca ou telefone. Eu usei TextView para compor a tela e usei \"android: drawableLeft\" para definir a imagem no lado esquerdo do \"SearchTextView\"</string>
+    <string name="donations_library">Doar</string>
+    <string name="donations_helpUs">Você gostaria de nos ajudar?</string>
+    <string name="click_here">Clique aqui:</string>
+    <string name="header_donate">Tela de doação/pagamento - Aqui você pode nos ajudar a manter melhorias no aplicativo.</string>
+    <string name="header_webView">Tela WebView - Aqui estamos inflando a tela de pagamento de uma cobrança personalizada no PayPal.</string>
+    <string name="return_app">Retornar</string>
 </resources>

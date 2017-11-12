@@ -1,9 +1,13 @@
 package com.udacity.music;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Donations extends AppCompatActivity {
@@ -53,6 +57,19 @@ public class Donations extends AppCompatActivity {
 
                 Intent goToLibrary = new Intent(Donations.this, LibraryActivity.class);
                 startActivity(goToLibrary);
+            }
+        });
+
+        //Go to WebView
+        ImageView webView = (ImageView) findViewById(R.id.payPalLogo);
+        webView.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick(View view) {
+
+                Intent goToWebView = new Intent(Donations.this, PayPal.class);
+                startActivity(goToWebView);
             }
         });
 

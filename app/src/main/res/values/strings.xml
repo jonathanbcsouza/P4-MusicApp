@@ -20,8 +20,9 @@
 
     <!-- Donations -->
     <string name="donations_library">Donate</string>
-    <string name="donations_helpUs">Help us improve this app</string>
-
+    <string name="donations_helpUs">Would you like to help us?</string>
+    <string name="click_here">Click here</string>
+    <string name="return_app">Return</string>
 
     <!-- Creating Headers Main Activities-->
     <string name="header_home">
@@ -36,13 +37,19 @@
         I used TextView for compose the screen, and I used "android:drawableLeft" to set the image in the left side of the "SearchTextView"
     </string>
 
-    <string name="header_library">"\n        Library Screen - Here is useful to choose the Artist, Album or song that you want to hear.\n        I used intents for called the specified activity.\n    "</string>
+    <string name="header_library">
+        Library Screen - Here is useful to choose the Artist, Album or song that you want to hear.
+        I used intents for called the specified activity."</string>
 
     <string name="header_donate">
         Donate Screen - Here you can help us to keep improves in our app.
         I used TextView for compose the screen.
     </string>
 
+    <string name="header_webView">
+        WebView Screen - Here inflate the website to make a donation.
+        I used WebView for compose the screen.
+    </string>
 
     <!-- Creating Headers Inflated-->
     <string name="text_setSize_header" translatable="false">
@@ -50,8 +57,8 @@
     </string>
 
     <string name="header_artist">
-        Artist Screen - this displays a list of songs based on the chosen artist.
-        This uses ListView and ArrayAdapter to display the list.
+        Artist Screen - this displays a list of songs based on the chosen artist.\n
+        This uses ListView and ArrayAdapter to display the list.\n
         When clicked on any list item, the method "setOnItemClickListener" is called and directs the user for artist chosen.
     </string>
 
@@ -72,7 +79,7 @@
 
     <!-- Music Player -->
     <string name="back" translatable="false"><![CDATA[<]]></string>
-    <string name="rewind"><![CDATA[<<]]></string>
+    <string name="rewind" translatable="false"><![CDATA[<<]]></string>
     <string name="forward" translatable="false"><![CDATA[>>]]></string>
     <string name="play" translatable="false"><![CDATA[>]]></string>
     <string name="pause" translatable="false">||</string>

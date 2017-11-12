@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context="com.udacity.music.HomeActivity">
+
+    <TextView
+        android:id="@+id/header_webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:textColor="@color/colorUdacityLogo" />
+
+    <WebView
+        android:id="@+id/payPalWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" />
+
+    <LinearLayout
+        android:id="@+id/navigationBarLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/paymentXmlFromPayPalXml"
+            style="@style/NavigationPayment"
+            android:drawableTop="@drawable/ic_keyboard_return_black_24dp"
+            android:text="@string/return_app" />
+
+        <ImageView
+            android:id="@+id/homeXmlFromPayPalXml"
+            style="@style/NavigationPayment"
+            android:layout_height="match_parent"
+            android:src="@drawable/pay_pal_logo2"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:text="@string/screen_home" />
+
+    </LinearLayout>
+
+</LinearLayout>
