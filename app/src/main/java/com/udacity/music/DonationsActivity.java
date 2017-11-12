@@ -1,16 +1,13 @@
 package com.udacity.music;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Donations extends AppCompatActivity {
+public class DonationsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +26,7 @@ public class Donations extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent goToHome = new Intent(Donations.this, HomeActivity.class);
+                Intent goToHome = new Intent(DonationsActivity.this, HomeActivity.class);
                 startActivity(goToHome);
             }
         });
@@ -42,7 +39,7 @@ public class Donations extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent goToSearch = new Intent(Donations.this, SearchActivity.class);
+                Intent goToSearch = new Intent(DonationsActivity.this, SearchActivity.class);
                 startActivity(goToSearch);
             }
         });
@@ -55,7 +52,7 @@ public class Donations extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent goToLibrary = new Intent(Donations.this, LibraryActivity.class);
+                Intent goToLibrary = new Intent(DonationsActivity.this, LibraryActivity.class);
                 startActivity(goToLibrary);
             }
         });
@@ -68,7 +65,7 @@ public class Donations extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent goToWebView = new Intent(Donations.this, PayPal.class);
+                Intent goToWebView = new Intent(DonationsActivity.this, PayPalActivity.class);
                 startActivity(goToWebView);
             }
         });

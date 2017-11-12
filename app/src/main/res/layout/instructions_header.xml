@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- ListView Header -->
     <TextView
         android:id="@+id/text_listView_header"
         android:layout_width="wrap_content"

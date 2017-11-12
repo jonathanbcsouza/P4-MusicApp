@@ -49,7 +49,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent goToLibraryIntent = new Intent(HomeActivity.this, Donations.class);
+                Intent goToLibraryIntent = new Intent(HomeActivity.this, DonationsActivity.class);
                 startActivity(goToLibraryIntent);
             }
         });

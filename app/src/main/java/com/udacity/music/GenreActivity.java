@@ -11,9 +11,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import static com.udacity.music.R.id.parent;
-
-public class Genre extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class GenreActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
 
     @Override
@@ -46,7 +44,7 @@ public class Genre extends AppCompatActivity implements AdapterView.OnItemClickL
                     artistSongs1.add(new Word(getString(R.string.artist1music1), R.drawable.ic_play_arrow_white_24dp, R.raw.johnhindemith_enlightening));
                     artistSongs1.add(new Word(getString(R.string.artist1music2), R.drawable.ic_play_arrow_white_24dp, R.raw.johnhindemith_darknessandlight));
 
-                    Intent goToAllSongs = new Intent(Genre.this, PlayingScreen.class);
+                    Intent goToAllSongs = new Intent(GenreActivity.this, PlayingScreen.class);
                     goToAllSongs.putParcelableArrayListExtra(Word.PARCELABLE_KEY, artistSongs1);
                     startActivity(goToAllSongs);
                 }
@@ -58,7 +56,7 @@ public class Genre extends AppCompatActivity implements AdapterView.OnItemClickL
                     artistSongs2.add(new Word(getString(R.string.artist2music2), R.drawable.ic_play_arrow_white_24dp, R.raw.felguk_white_horse));
                     artistSongs2.add(new Word(getString(R.string.artist2music3), R.drawable.ic_play_arrow_white_24dp, R.raw.felguk_hands_up_for_detroit));
 
-                    Intent goToAllSongs = new Intent(Genre.this, PlayingScreen.class);
+                    Intent goToAllSongs = new Intent(GenreActivity.this, PlayingScreen.class);
                     goToAllSongs.putParcelableArrayListExtra(Word.PARCELABLE_KEY, artistSongs2);
                     startActivity(goToAllSongs);
                 }
@@ -81,7 +79,7 @@ public class Genre extends AppCompatActivity implements AdapterView.OnItemClickL
                     artistSongs3.add(new Word(getString(R.string.artist3music13), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave13_getaway_car));
                     artistSongs3.add(new Word(getString(R.string.artist3music14), R.drawable.ic_play_arrow_white_24dp, R.raw.audioslave14_the_last_remaining_light));
 
-                    Intent goToAllSongs = new Intent(Genre.this, PlayingScreen.class);
+                    Intent goToAllSongs = new Intent(GenreActivity.this, PlayingScreen.class);
                     goToAllSongs.putParcelableArrayListExtra(Word.PARCELABLE_KEY, artistSongs3);
                     startActivity(goToAllSongs);
                 }

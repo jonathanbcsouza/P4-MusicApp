@@ -18,11 +18,27 @@
     <string name="library_genre">Genre</string>
     <string name="library_all_songs">All Songs</string>
 
-    <!-- Donations -->
+    <!-- Artists -->
+    <string name="screen_artists">Artists</string>
+
+    <!--GenreActivity -->
+    <string name="screen_genre">Genre</string>
+
+    <!-- All Songs -->
+    <string name="screen_allSongs">All Songs</string>
+
+    <!-- Now Playing -->
+    <string name="screen_now_playing">Now Playing</string>
+
+    <!--DonationsActivity-->
+    <string name="screen_donations">Donations</string>
     <string name="donations_library">Donate</string>
     <string name="donations_helpUs">Would you like to help us?</string>
     <string name="click_here">Click here</string>
     <string name="return_app">Return</string>
+
+    <!-- Checkout -->
+    <string name="screen_check_out">Checkout</string>
 
     <!-- Creating Headers Main Activities-->
     <string name="header_home">
@@ -121,5 +137,6 @@
     <string name="genre_alternative">Alternative</string>
     <string name="genre_electronic">Dance/Electronic</string>
     <string name="genre_rock" translatable="false">Rock</string>
+    <string name="pay_pal_webSite">https://www.paypal.com/invoice/p/#PPGVDPNKFH28X84Z</string>
 
 </resources>

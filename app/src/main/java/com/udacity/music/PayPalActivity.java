@@ -8,7 +8,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.TextView;
 
-public class PayPal extends AppCompatActivity {
+public class PayPalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +24,9 @@ public class PayPal extends AppCompatActivity {
         WebSettings webSettings = payPaySite.getSettings();
         webSettings.setJavaScriptEnabled(true);
         //InVoice
-        payPaySite.loadUrl("https://www.paypal.com/invoice/p/#PPGVDPNKFH28X84Z");
+        payPaySite.loadUrl(getString(R.string.pay_pal_webSite));
 
-
-        //Return to Donations
+        //Return to DonationsActivity
         TextView returnToDonations = (TextView) findViewById(R.id.paymentXmlFromPayPalXml);
         returnToDonations.setOnClickListener(new View.OnClickListener()
 
@@ -35,7 +34,7 @@ public class PayPal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent goToLibrary = new Intent(PayPal.this, Donations.class);
+                Intent goToLibrary = new Intent(PayPalActivity.this, DonationsActivity.class);
                 startActivity(goToLibrary);
             }
         });

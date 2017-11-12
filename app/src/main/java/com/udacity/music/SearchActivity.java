@@ -48,7 +48,7 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent goToLibraryIntent = new Intent(SearchActivity.this, Donations.class);
+                Intent goToLibraryIntent = new Intent(SearchActivity.this, DonationsActivity.class);
                 startActivity(goToLibraryIntent);
             }
         });

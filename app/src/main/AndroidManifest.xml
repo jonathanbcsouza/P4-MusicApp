@@ -21,21 +21,64 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/screen_home" />
+
         <activity
             android:name=".SearchActivity"
-            android:label="@string/screen_search" />
+            android:label="@string/screen_search"
+            android:parentActivityName=".HomeActivity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.udacity.music.HomeActivity" />
+
         <activity
             android:name=".LibraryActivity"
-            android:label="@string/screen_library" />
+            android:label="@string/screen_library"
+            android:parentActivityName=".HomeActivity" />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.udacity.music.HomeActivity" />
+
+        <activity
+            android:name=".DonationsActivity"
+            android:label="@string/screen_donations"
+            android:parentActivityName=".HomeActivity" />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.udacity.music.HomeActivity" />
+
+        <activity
+            android:name=".PayPalActivity"
+            android:label="@string/screen_check_out"
+            android:parentActivityName=".HomeActivity" />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.udacity.music.HomeActivity" />
+
         <activity
             android:name=".ArtistActivity"
-            android:label="@string/library_artists" />
+            android:label="@string/screen_artists"
+            android:parentActivityName=".LibraryActivity" />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.udacity.music.HomeActivity" />
+
         <activity
-            android:name=".Genre"
-            android:label="@string/library_genre" />
-        <activity android:name=".PlayingScreen" />
-        <activity android:name=".Donations" />
-        <activity android:name=".PayPal"></activity>
+            android:name=".GenreActivity"
+            android:label="@string/screen_genre"
+            android:parentActivityName=".LibraryActivity" />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.udacity.music.HomeActivity" />
+
+        <activity
+            android:name=".PlayingScreen"
+            android:label="@string/screen_allSongs"
+            android:parentActivityName=".LibraryActivity" />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.udacity.music.HomeActivity" />
+
     </application>
 
 </manifest>

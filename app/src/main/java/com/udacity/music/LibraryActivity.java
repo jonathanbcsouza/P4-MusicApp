@@ -54,7 +54,7 @@ public class LibraryActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent goToDonations = new Intent(LibraryActivity.this, Donations.class);
+                Intent goToDonations = new Intent(LibraryActivity.this, DonationsActivity.class);
                 startActivity(goToDonations);
             }
         });
@@ -78,7 +78,7 @@ public class LibraryActivity extends AppCompatActivity {
             }
         });
 
-        //Go to Option 2 Genre
+        //Go to Option 2 GenreActivity
         TextView genre = (TextView) findViewById(R.id.genreXmlFromLibrary);
         genre.setOnClickListener(new View.OnClickListener()
 
@@ -91,7 +91,7 @@ public class LibraryActivity extends AppCompatActivity {
                 genreList.add(new Word(getString(R.string.genre_electronic), R.drawable.genre_dance));
                 genreList.add(new Word(getString(R.string.genre_rock), R.drawable.genre_rock));
 
-                Intent goToGenre = new Intent(LibraryActivity.this, Genre.class);
+                Intent goToGenre = new Intent(LibraryActivity.this, GenreActivity.class);
                 goToGenre.putParcelableArrayListExtra(Word.PARCELABLE_KEY, genreList);
                 startActivity(goToGenre);
             }
