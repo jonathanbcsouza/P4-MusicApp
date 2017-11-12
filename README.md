@@ -12,7 +12,7 @@ Contains a list of songs defined by app.
 
 Features
 
-- 3 Screens : `Home` :iphone: `Search` :mag_right: & `Library` :books:
+- 4 Screens : `Home` :iphone: `Search` :mag_right: `Donations` :moneybag: & `Library` :books:
 - A funny music player :sweat_smile:
 - List of songs :headphones:
 
