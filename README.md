@@ -37,5 +37,5 @@ This [class](https://github.com/jonathanbcsouza/mymusicapp/blob/master/app/src/m
 
 **Donations**
 
-If you want to make some donations for improve this project, go to [PayPal](https://www.paypal.com/invoice/p/#PPGVDPNKFH28X84Z) website or fork this app and install in your device and access Donations Screen. :sweat_smile:
+If you want to make some donations for improve this project, go to [PayPal](https://www.paypal.com/invoice/p/#PPGVDPNKFH28X84Z) website or fork this app and install in your device and access Donations Screen.
 
