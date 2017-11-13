@@ -15,15 +15,14 @@ I made comments into the code for help android students understand about learned
 Features
 
 - 4 Screens:
-
 `Home` :iphone: `Search` :mag_right: `Library` :books: and `Donations` :credit_card: 
-- A funny music player :sweat_smile:
-- List of songs :headphones:
+- A funny music player :sweat_smile:<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_payment.png" width="200" align="right" hspace="5"><img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_artists.png" width="200" align="right" hspace="5">
+- List of songs :headphones: 
 
 This example I used:
 
 - 11 Java classes
-- 10 Xml files  <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_payment.png" width="200" align="right" hspace="5"><img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_artists.png" width="200" align="right" hspace="5">
+- 10 Xml files 
 - 19 Songs 
 - Intents
 - ClickListeners
