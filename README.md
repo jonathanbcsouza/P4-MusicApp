@@ -1,10 +1,8 @@
 My Music App <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/app/src/main/ic_launcher-web.png" width="50"  align="center" >
 =================================
 
-
 <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_library.png" width="200" align="right"  hspace="5">
 <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_home.png" width="200" align="right" hspace="5">
-
 
 *Created as part of [Udacity's](http://udacity.com) Android Basics by Google Nanodegree Program*
 
@@ -16,7 +14,8 @@ Features
 
 - 4 Screens:
 `Home` :iphone: `Search` :mag_right: `Library` :books: and `Donations` :credit_card: 
-- A funny music player :sweat_smile:<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_payment.png" width="200" align="right" hspace="5"><img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_artists.png" width="200" align="right" hspace="5">
+- A funny music player :sweat_smile:
+
 - List of songs :headphones: 
 
 This example I used:
