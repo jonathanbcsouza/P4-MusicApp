@@ -32,6 +32,8 @@ This example I used:
 
 This [class](https://github.com/jonathanbcsouza/mymusicapp/blob/master/app/src/main/java/com/udacity/music/PlayingScreen.java) have comments for help students understand.
 
+ ---
+
 **Donations**
 
 If you want to make some donations for improve this project, go to [PayPal](https://www.paypal.com/invoice/p/#PPGVDPNKFH28X84Z) website or fork this app and install in your device and access Donations Screen.
