@@ -8,7 +8,7 @@ My Music App <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusic
 
 This is 4th project approved from Udacity/Google Nanodegree.
 
-I made comments into the code for help android students understand about learned concepts in the course.
+I made comments into the code to help android students understand about learned concepts in the course.
 
 Features:
 
@@ -28,13 +28,9 @@ This example I used:
 - RecicleViews
 - WebView for payments by PayPal.
 
-**More information**
-
-This [class](https://github.com/jonathanbcsouza/mymusicapp/blob/master/app/src/main/java/com/udacity/music/PlayingScreen.java) have comments for help students understand.
-
  ---
 
-**Donations**
+**More information**
 
-If you want to make some donations for improve this project, go to [PayPal](https://www.paypal.com/invoice/p/#PPGVDPNKFH28X84Z) website or fork this app and install in your device and access Donations Screen.
+This [class](https://github.com/jonathanbcsouza/mymusicapp/blob/master/app/src/main/java/com/udacity/music/PlayingScreen.java) has comments.
 
