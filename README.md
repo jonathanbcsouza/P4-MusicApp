@@ -4,11 +4,11 @@ My Music App <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusic
 <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_library.png" width="200" align="right"  hspace="5">
 <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_home.png" width="200" align="right" hspace="5">
 
-*Created as part of [Udacity's](http://udacity.com) Android Basics by Google Nanodegree Program*
+*Created as part of [Udacity's](http://udacity.com) Android Basics Nanodegree by Google*
 
-This is 4th project approved from Udacity/Google Nanodegree.
+This was my 4th project during the Nanodegree program.
 
-I made comments into the code to help android students understand about learned concepts in the course.
+There is some also comments in the code to help students.
 
 Features:
 
@@ -17,7 +17,7 @@ Features:
 - A funny music player :sweat_smile:
 - List of songs :headphones: 
 
-This example I used:
+Concepts used:
 
 - 11 Java classes<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_payment.png" width="200" align="right" hspace="5"><img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_artists.png" width="200" align="right" hspace="5">
 - 10 Xml files 
