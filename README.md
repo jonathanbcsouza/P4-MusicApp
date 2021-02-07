@@ -3,6 +3,16 @@ My Music App <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusic
 
 *Created as part of [Udacity's](http://udacity.com) Android Basics Nanodegree by Google*
 
+<div>
+<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_library.png" width="200" hspace="5">
+
+<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_home.png" width="200"  hspace="5">
+
+<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_payment.png" width="200" hspace="5">
+
+<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_artists.png" width="200" hspace="5">
+</div>
+
 This was my 4th project during the Nanodegree program.
 
 There is some also comments in the code to help students.
@@ -30,12 +40,3 @@ Concepts used:
 **More information**
 
 This [class](https://github.com/jonathanbcsouza/mymusicapp/blob/master/app/src/main/java/com/udacity/music/PlayingScreen.java) has comments.
-
-<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_library.png" width="200" align="right"  hspace="5">
-
-<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_home.png" width="200" align="right" hspace="5">
-
-<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_payment.png" width="200" align="right" hspace="5">
-
-<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_artists.png" width="200" align="right" hspace="5">
-
