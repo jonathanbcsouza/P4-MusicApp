@@ -2,6 +2,7 @@ My Music App <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusic
 =================================
 
 <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_library.png" width="200" align="right"  hspace="5">
+
 <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_home.png" width="200" align="right" hspace="5">
 
 *Created as part of [Udacity's](http://udacity.com) Android Basics Nanodegree by Google*
@@ -18,8 +19,8 @@ Features:
 - List of songs :headphones: 
 
 Concepts used:
-
-- 11 Java classes<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_payment.png" width="200" align="right" hspace="5"><img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_artists.png" width="200" align="right" hspace="5">
+<img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_payment.png" width="200" align="right" hspace="5"><img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusicapp/master/screenshots/screenshot_artists.png" width="200" align="right" hspace="5">
+- 11 Java classes
 - 10 Xml files 
 - 19 Songs 
 - Intents
