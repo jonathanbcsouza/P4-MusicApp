@@ -15,7 +15,7 @@ My Music App <img src="https://raw.githubusercontent.com/jonathanbcsouza/mymusic
 
 This was my 4th project during the Nanodegree program.
 
-There is some also comments in the code to help students.
+There is some comments within the code to help students.
 
 Features:
 
@@ -24,7 +24,7 @@ Features:
 - A funny music player :sweat_smile:
 - List of songs :headphones: 
 
-Concepts used:
+Concepts:
 
 - 11 Java classes
 - 10 Xml files 
@@ -33,7 +33,7 @@ Concepts used:
 - ClickListeners
 - Arraylists
 - RecicleViews
-- WebView for payments by PayPal.
+- WebView for payments with PayPal.
 
  ---
 
